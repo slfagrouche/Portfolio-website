@@ -213,46 +213,66 @@ export type SkillTag = {
 export const skillCategories: SkillCategory[] = [
   {
     id: 1,
-    title: "Programming Languages",
+    title: "Languages & Tools",
     icon: "code",
     skills: [
       { name: "Python", level: "Expert", percentage: 95 },
       { name: "Java", level: "Advanced", percentage: 85 },
       { name: "C++", level: "Intermediate", percentage: 75 },
-      { name: "JavaScript", level: "Advanced", percentage: 80 },
-      { name: "SQL", level: "Advanced", percentage: 85 }
+      { name: "SQL", level: "Advanced", percentage: 85 },
+      { name: "Git", level: "Advanced", percentage: 80 }
     ]
   },
   {
     id: 2,
-    title: "Machine Learning & AI",
+    title: "ML & AI",
     icon: "robot",
     skills: [
       { name: "TensorFlow", level: "Advanced", percentage: 85 },
       { name: "PyTorch", level: "Advanced", percentage: 80 },
-      { name: "Scikit-learn", level: "Expert", percentage: 90 },
       { name: "Hugging Face", level: "Advanced", percentage: 85 },
-      { name: "LangChain", level: "Advanced", percentage: 80 }
+      { name: "LangChain", level: "Advanced", percentage: 85 },
+      { name: "Scikit-learn", level: "Expert", percentage: 90 }
+    ]
+  },
+  {
+    id: 3,
+    title: "Frameworks & Cloud",
+    icon: "server",
+    skills: [
+      { name: "Spring Boot", level: "Advanced", percentage: 85 },
+      { name: "Django", level: "Advanced", percentage: 80 },
+      { name: "AWS", level: "Advanced", percentage: 85 },
+      { name: "Docker", level: "Intermediate", percentage: 75 },
+      { name: "MongoDB", level: "Advanced", percentage: 80 }
     ]
   }
 ];
 
 export const skillTags: { [key: string]: SkillTag[] } = {
   "Cloud & DevOps": [
-    { name: "AWS S3", icon: "aws" },
-    { name: "EC2", icon: "aws" },
-    { name: "Lambda", icon: "aws" },
+    { name: "AWS", icon: "aws" },
+    { name: "GCP", icon: "cloud" },
     { name: "Docker", icon: "docker" },
-    { name: "Kubernetes", icon: "dharmachakra" },
-    { name: "CI/CD", icon: "server" }
+    { name: "Git", icon: "git" },
+    { name: "CI/CD", icon: "server" },
+    { name: "Linux", icon: "terminal" }
+  ],
+  "Data & AI": [
+    { name: "MongoDB", icon: "database" },
+    { name: "Weaviate", icon: "database" },
+    { name: "RAG", icon: "search" },
+    { name: "Milvus", icon: "database" },
+    { name: "Pandas", icon: "python" },
+    { name: "NumPy", icon: "calculator" }
   ],
   "Web Development": [
+    { name: "Spring Boot", icon: "java" },
     { name: "Django", icon: "python" },
     { name: "Flask", icon: "python" },
-    { name: "Spring Boot", icon: "java" },
-    { name: "React.js", icon: "react" },
-    { name: "Vue.js", icon: "vuejs" },
-    { name: "MongoDB", icon: "database" }
+    { name: "Postman", icon: "send" },
+    { name: "Swagger", icon: "file-text" },
+    { name: "Jenkins", icon: "settings" }
   ]
 };
 

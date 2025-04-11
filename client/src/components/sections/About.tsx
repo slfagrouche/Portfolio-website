@@ -6,8 +6,8 @@ const About = () => {
   const coreSkills = [
     { name: "Python", level: "Expert", percentage: 95 },
     { name: "Java", level: "Advanced", percentage: 85 },
-    { name: "AWS", level: "Advanced", percentage: 80 },
-    { name: "TensorFlow/PyTorch", level: "Advanced", percentage: 85 }
+    { name: "Spring Boot", level: "Advanced", percentage: 80 },
+    { name: "LangChain", level: "Advanced", percentage: 85 }
   ];
 
   return (
@@ -20,7 +20,7 @@ const About = () => {
           <div className="md:w-1/2">
             <div className="pr-0 md:pr-6">
               <p className="text-neutral-700 dark:text-neutral-300 mb-8 leading-relaxed text-lg">
-                ML engineer specializing in AI solutions and cloud architecture.
+                AI Software Engineer specializing in backend engineering and machine learning solutions.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
