@@ -314,7 +314,7 @@ export const aboutDetails = {
   currentPosition: {
     title: "Lead AI Engineer",
     company: "City Tech, CUNY",
-    description: "Leading AI engineering initiatives, deploying NLP chatbots with LangChain, and building web scraping solutions with Firecrawler for educational resources."
+    description: ""
   },
   fellowships: [
     "Apple Pathways Alliance Scholar (Sep 2024 - Present)",

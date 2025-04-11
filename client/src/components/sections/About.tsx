@@ -19,8 +19,8 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-12 mt-12">
           <div className="md:w-1/2">
             <div className="pr-0 md:pr-6">
-              <p className="text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">
-                ML engineer specializing in AI solutions and cloud architecture. I build scalable systems that solve real problems through innovative technology.
+              <p className="text-neutral-700 dark:text-neutral-300 mb-8 leading-relaxed text-lg">
+                ML engineer specializing in AI solutions and cloud architecture.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
