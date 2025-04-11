@@ -17,17 +17,19 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-primary/10 blur-2xl transform -translate-y-4 translate-x-4"></div>
               <img 
-                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" 
+                src="https://media.licdn.com/dms/image/v2/D4E03AQGNaBy-8LVZMw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725496285203?e=1749686400&v=beta&t=IB0cWMUnU1F5gWTVvyEaO8plfqMgXP947hSygvKRY2E" 
                 alt={personalInfo.name} 
                 className="relative w-64 h-64 object-cover rounded-full mx-auto border-4 border-background dark:border-secondary shadow-lg beige-card-hover"
               />
               <div className="absolute -bottom-3 -right-3 bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
-                <FontAwesomeIcon icon={["fas", "code"]} className="text-lg" />
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
               </div>
             </div>
           </div>
           <div className="md:w-3/5 text-center md:text-left">
-            <span className="inline-block px-3 py-1 bg-primary/10 text-primary-foreground/90 dark:bg-primary/20 dark:text-primary rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-3 py-1 bg-primary/5 text-primary/80 dark:bg-primary/10 dark:text-primary/90 rounded-full text-sm font-medium mb-4 border border-primary/20">
               Welcome to my portfolio
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-900 dark:text-neutral-100 font-serif">
@@ -41,7 +43,10 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <a href="#contact" className="px-6 py-3 beige-button flex items-center space-x-2">
-                <FontAwesomeIcon icon={["fas", "envelope"]} />
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
                 <span>Contact Me</span>
               </a>
             </div>

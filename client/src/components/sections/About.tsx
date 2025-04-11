@@ -20,16 +20,42 @@ const About = () => {
           <div className="md:w-1/2">
             <div className="pr-0 md:pr-6">
               <p className="text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">
-                Software engineer with expertise in machine learning and cloud technologies, I specialize in developing scalable, efficient solutions for complex technological challenges. My skill set spans a wide range of cutting-edge technologies.
+                ML engineer specializing in AI solutions and cloud architecture. I build scalable systems that solve real problems through innovative technology.
               </p>
-              <p className="text-neutral-700 dark:text-neutral-300 mb-8 leading-relaxed">
-                Whether working on AI-powered applications, developing robust backend systems, or crafting intuitive user interfaces, I am committed to building technology that makes a meaningful impact.
-              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div className="flex items-start">
+                  <svg className="w-5 h-5 text-primary mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700 dark:text-neutral-300">AI/ML model development</span>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-5 h-5 text-primary mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700 dark:text-neutral-300">Cloud architecture (AWS)</span>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-5 h-5 text-primary mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700 dark:text-neutral-300">Data pipeline optimization</span>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-5 h-5 text-primary mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-neutral-700 dark:text-neutral-300">Full-stack development</span>
+                </div>
+              </div>
               
               <div className="mt-8 grid grid-cols-1 gap-4">
                 <div className="p-5 beige-card bg-primary/5 dark:bg-primary/10">
                   <div className="flex items-center mb-3">
-                    <FontAwesomeIcon icon={["fas", "graduation-cap"]} className="mr-3 text-primary" />
+                    <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                    </svg>
                     <h3 className="font-semibold text-primary dark:text-primary mb-0">Education</h3>
                   </div>
                   <p className="text-neutral-800 dark:text-neutral-200 font-medium">{aboutDetails.education.degree}</p>
@@ -86,15 +112,33 @@ const About = () => {
               <div className="mt-8 p-5 beige-card bg-primary/5 dark:bg-primary/10 relative overflow-hidden">
                 <div className="relative z-10">
                   <div className="flex items-center mb-3">
-                    <FontAwesomeIcon icon={["fas", "briefcase"]} className="mr-3 text-primary" />
+                    <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
+                      <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                    </svg>
                     <h3 className="font-semibold text-primary dark:text-primary mb-0">Current Position</h3>
                   </div>
                   <p className="text-neutral-800 dark:text-neutral-200 font-medium">{aboutDetails.currentPosition.title}</p>
                   <p className="text-neutral-600 dark:text-neutral-400 mb-2">{aboutDetails.currentPosition.company}</p>
-                  <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed">{aboutDetails.currentPosition.description}</p>
+                  <ul className="text-neutral-700 dark:text-neutral-300 text-sm space-y-2 mt-2">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Developed AI security platform with computer vision</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Architected cloud-based ML infrastructure on AWS</span>
+                    </li>
+                  </ul>
                 </div>
                 <div className="absolute top-0 right-0 opacity-10 dark:opacity-5">
-                  <FontAwesomeIcon icon={["fas", "code"]} className="text-8xl text-primary" />
+                  <svg className="w-24 h-24 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
                 </div>
               </div>
             </div>
