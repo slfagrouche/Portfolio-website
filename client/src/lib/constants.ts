@@ -18,6 +18,8 @@ export type Project = {
   imageUrl: string;
   technologies: string[];
   projectUrl: string;
+  demoVideo?: string;
+  hasInteractiveDemo?: boolean;
 };
 
 export const projects: Project[] = [
@@ -27,28 +29,44 @@ export const projects: Project[] = [
     category: "AI/ML",
     description: "AI-powered cooking assistant providing personalized recipes, meal planning, and real-time cooking guidance.",
     imageUrl: "https://images.unsplash.com/photo-1555596898-fc3757ea5351?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "TensorFlow", "Flask"],
+    technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
     projectUrl: "#",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: 2,
-    title: "TUTOR",
+    title: "TravelAI Companion",
     category: "AI/ML",
-    description: "AI-powered educational assistant for audio transcription, PDF text extraction, and context-aware Q&A.",
+    description: "AI-driven travel assistant that offers personalized itineraries and real-time language translation for international travelers.",
     imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "LangChain", "MongoDB"],
+    technologies: ["Python", "LangChain", "MongoDB", "React"],
     projectUrl: "#",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: 3,
     title: "SafeGuard",
     category: "Cloud",
-    description: "Crisis monitoring platform for real-time incident tracking and alerts in humanitarian crisis areas.",
+    description: "Crisis monitoring platform for real-time incident tracking and alerts in humanitarian crisis areas using AI verification.",
     imageUrl: "https://images.unsplash.com/photo-1606765962248-7ff407b51667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "AWS", "FastAPI"],
+    technologies: ["Python", "AWS", "FastAPI", "LangChain", "React"],
     projectUrl: "#",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
-  
+  {
+    id: 4,
+    title: "AI-Powered Mock Interview",
+    category: "AI/ML",
+    description: "Interactive interview practice platform using AI to simulate real interviews and provide feedback for job seekers.",
+    imageUrl: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["JavaScript", "React", "OpenAI", "Node.js", "MongoDB"],
+    projectUrl: "#",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  }
 ];
 
 export type Experience = {
