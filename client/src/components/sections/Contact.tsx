@@ -44,6 +44,8 @@ const Contact = () => {
                       <a 
                         href={`mailto:${personalInfo.email}`}
                         className="text-neutral-900 dark:text-neutral-100 font-medium hover:text-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         {personalInfo.email}
                       </a>
@@ -124,16 +126,49 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="pt-4">
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 text-primary flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 512 512">
+                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm text-neutral-500 dark:text-neutral-400">X (Twitter)</p>
+                      <a 
+                        href={personalInfo.twitter}
+                        className="text-neutral-900 dark:text-neutral-100 font-medium hover:text-primary group flex items-center" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        Connect on X
+                        <svg 
+                          className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1"
+                          fill="currentColor" 
+                          viewBox="0 0 20 20"
+                        >
+                          <path 
+                            fillRule="evenodd" 
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-6 mt-2 border-t border-border">
+                    <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                      Ready to connect? Click below to open your email client:
+                    </p>
                     <a 
                       href={`mailto:${personalInfo.email}`}
-                      className="inline-flex items-center px-6 py-3 beige-button rounded-full shadow-sm hover:shadow-md transition-all duration-300 font-medium"
+                      className="inline-flex items-center justify-center w-full px-6 py-3.5 beige-button rounded-full shadow-sm hover:shadow-md transition-all duration-300 font-medium text-neutral-800"
                     >
                       <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                       </svg>
-                      Send me an email
+                      Send Me an Email
                     </a>
                   </div>
                 </div>

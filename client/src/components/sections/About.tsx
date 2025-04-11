@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SkillProgress from "@/components/ui/skill-progress";
-import { aboutDetails } from "@/lib/constants";
+import { aboutDetails, personalInfo } from "@/lib/constants";
 
 const About = () => {
   const coreSkills = [
@@ -60,6 +60,7 @@ const About = () => {
                   </div>
                   <p className="text-neutral-800 dark:text-neutral-200 font-medium">{aboutDetails.education.degree}</p>
                   <p className="text-neutral-600 dark:text-neutral-400 text-sm">{aboutDetails.education.school}</p>
+                  <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">📚 Studied abroad in Morocco and Japan</p>
                 </div>
                 
                 <div className="p-5 beige-card bg-primary/5 dark:bg-primary/10">
@@ -69,6 +70,49 @@ const About = () => {
                   </div>
                   <p className="text-neutral-800 dark:text-neutral-200 font-medium">{aboutDetails.certifications.title}</p>
                   <p className="text-neutral-600 dark:text-neutral-400 text-sm">{aboutDetails.certifications.others}</p>
+                </div>
+                
+                <div className="p-5 beige-card bg-primary/5 dark:bg-primary/10">
+                  <div className="flex items-center mb-3">
+                    <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M7 2a1 1 0 011 1v1h3a1 1 0 110 2H9.20l.4 2H12a1 1 0 110 2H9.92l.4 2H12a1 1 0 110 2H10.6l.4 2H16a1 1 0 110 2h-5.4l.4 2H15a1 1 0 110 2h-4.4a1 1 0 01-.98-.8l-.5-2.5a1 1 0 01.9-1.2H12a1 1 0 01-.9-1.2l-.5-2.5a1 1 0 01.9-1.2H12a1 1 0 01-.9-1.2l-.5-2.5a1 1 0 01.9-1.2H12A1 1 0 0111 5H8a1 1 0 110-2h3V2a1 1 0 011-1z" clipRule="evenodd"></path>
+                    </svg>
+                    <h3 className="font-semibold text-primary dark:text-primary mb-0">Languages</h3>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 mt-2">
+                    {personalInfo.languages?.map((language, index) => (
+                      <div key={index} className="flex items-center">
+                        <svg className="w-4 h-4 text-primary mr-1.5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-neutral-700 dark:text-neutral-300 text-sm">{language}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div className="p-5 beige-card bg-primary/5 dark:bg-primary/10">
+                  <div className="flex items-center mb-3">
+                    <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd"></path>
+                    </svg>
+                    <h3 className="font-semibold text-primary dark:text-primary mb-0">Hobbies & Interests</h3>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 mt-2">
+                    {personalInfo.hobbies?.map((hobby, index) => (
+                      <div key={index} className="flex items-center">
+                        <svg className="w-4 h-4 text-primary mr-1.5" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path>
+                        </svg>
+                        <span className="text-neutral-700 dark:text-neutral-300 text-sm">{hobby}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-3 pt-3 border-t border-border">
+                    <p className="text-neutral-700 dark:text-neutral-300 text-sm">
+                      <span className="font-medium">Fun fact:</span> I love both Japanese ramen and Moroccan couscous!
+                    </p>
+                  </div>
                 </div>
                 
                 <div className="p-5 beige-card bg-primary/5 dark:bg-primary/10">

@@ -2,12 +2,17 @@ export const personalInfo = {
   name: "Said Lfagrouche",
   title: "Software Engineer & AI/ML Engineer",
   bio: "Specialized in developing scalable solutions with expertise in machine learning, cloud technologies, and full-stack development.",
-  location: "Washington, DC",
-  email: "contact@saidlfagrouche.com",
+  location: "New York, NY",
+  email: "SaidLfagrouche@gmail.com",
   linkedin: "https://linkedin.com/in/saidlfagrouche",
   github: "https://github.com/slfagrouche",
-  twitter: "#",
+  twitter: "https://x.com/SLfagrouch3441",
   resumeUrl: "#",
+  
+  // Personal details
+  languages: ["English", "Arabic", "Darija", "Berber", "French (Beginner)"],
+  hobbies: ["Soccer", "Hiking", "Cooking", "Travel"],
+  funFacts: ["Studied abroad in Morocco and Japan", "Speaks 4 languages", "Loves ramen and Moroccan couscous"],
 };
 
 export type Project = {
