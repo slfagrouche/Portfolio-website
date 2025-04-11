@@ -7,29 +7,30 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="bg-white dark:bg-neutral-800 rounded-lg overflow-hidden shadow-md border border-neutral-200 dark:border-neutral-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-      <div className="h-48 overflow-hidden">
+    <div className="beige-card beige-card-hover overflow-hidden bg-card">
+      <div className="h-48 overflow-hidden relative group">
+        <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
         <img 
           src={project.imageUrl} 
           alt={`${project.title} Project`} 
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-      </div>
-      <div className="p-5">
-        <div className="flex justify-between items-start mb-2">
-          <h3 className="text-lg font-semibold text-neutral-800 dark:text-white">{project.title}</h3>
-          <span className="text-xs bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-300 px-2 py-1 rounded-full">
+        <div className="absolute top-3 right-3 z-20">
+          <span className="text-xs bg-primary/20 dark:bg-primary/30 text-primary-foreground dark:text-primary px-3 py-1.5 rounded-full font-medium backdrop-blur-sm">
             {project.category}
           </span>
         </div>
-        <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4">
+      </div>
+      <div className="p-5">
+        <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2 font-serif">{project.title}</h3>
+        <p className="text-neutral-700 dark:text-neutral-300 text-sm mb-4 leading-relaxed">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech, index) => (
             <span 
               key={index} 
-              className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded-full text-neutral-600 dark:text-neutral-300"
+              className="text-xs bg-secondary dark:bg-secondary px-2.5 py-1 rounded-full text-neutral-700 dark:text-neutral-300"
             >
               {tech}
             </span>
@@ -37,9 +38,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </div>
         <a 
           href={project.projectUrl} 
-          className="text-primary dark:text-primary-400 text-sm font-medium hover:underline flex items-center"
+          className="text-primary dark:text-primary text-sm font-medium group inline-flex items-center"
         >
-          View Project <FontAwesomeIcon icon={["fas", "arrow-right"]} className="ml-1 text-xs" />
+          <span className="group-hover:underline">View Project</span> 
+          <FontAwesomeIcon 
+            icon={["fas", "arrow-right"]} 
+            className="ml-1.5 text-xs transition-transform duration-300 group-hover:translate-x-1" 
+          />
         </a>
       </div>
     </div>

@@ -10,37 +10,41 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="py-16 md:py-24 px-4 fade-in">
-      <div className="container mx-auto max-w-5xl">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-10 md:mb-0">
+    <section id="hero" className="py-20 md:py-28 px-4 fade-in bg-gradient-to-b from-background to-secondary/30 dark:from-background dark:to-secondary/10">
+      <div className="container-custom">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-2/5 mb-10 md:mb-0">
             <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-primary/10 blur-2xl transform -translate-y-4 translate-x-4"></div>
               <img 
                 src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" 
                 alt={personalInfo.name} 
-                className="w-64 h-64 object-cover rounded-full mx-auto border-4 border-white dark:border-neutral-800 shadow-lg"
+                className="relative w-64 h-64 object-cover rounded-full mx-auto border-4 border-background dark:border-secondary shadow-lg beige-card-hover"
               />
-              <div className="absolute -bottom-3 -right-3 bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
+              <div className="absolute -bottom-3 -right-3 bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center shadow-lg">
                 <FontAwesomeIcon icon={["fas", "code"]} className="text-lg" />
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-800 dark:text-white">
-              I'm <span className="text-primary dark:text-primary-400">{personalInfo.name}</span>
+          <div className="md:w-3/5 text-center md:text-left">
+            <span className="inline-block px-3 py-1 bg-primary/10 text-primary-foreground/90 dark:bg-primary/20 dark:text-primary rounded-full text-sm font-medium mb-4">
+              Welcome to my portfolio
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-900 dark:text-neutral-100 font-serif">
+              I'm <span className="text-primary dark:text-primary">{personalInfo.name}</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-6 text-neutral-600 dark:text-neutral-300">
+            <p className="text-xl md:text-2xl mb-6 text-neutral-700 dark:text-neutral-300 font-light">
               {personalInfo.title}
             </p>
-            <p className="text-neutral-600 dark:text-neutral-300 mb-8 max-w-md">
+            <p className="text-neutral-600 dark:text-neutral-400 mb-8 max-w-md leading-relaxed">
               {personalInfo.bio}
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <a href="#contact" className="px-6 py-3 bg-primary hover:bg-primary-600 text-white rounded-md transition-colors shadow-md flex items-center space-x-2">
+              <a href="#contact" className="px-6 py-3 beige-button flex items-center space-x-2">
                 <FontAwesomeIcon icon={["fas", "envelope"]} />
                 <span>Contact Me</span>
               </a>
-              <a href={personalInfo.resumeUrl} className="px-6 py-3 border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-md transition-colors flex items-center space-x-2 text-neutral-700 dark:text-neutral-200">
+              <a href={personalInfo.resumeUrl} className="px-6 py-3 beige-button-outlined flex items-center space-x-2">
                 <FontAwesomeIcon icon={["fas", "download"]} />
                 <span>Download CV</span>
               </a>
