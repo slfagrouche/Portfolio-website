@@ -5,10 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  
+  const maxProjectsToShow = showAllProjects ? projects.length : 6;
   
   const filteredProjects = activeFilter === "All" 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+    ? projects.slice(0, maxProjectsToShow)
+    : projects.filter(project => project.category === activeFilter).slice(0, maxProjectsToShow);
 
   return (
     <section id="projects" className="py-20 fade-in">
@@ -54,13 +57,24 @@ const Projects = () => {
         </div>
         
         <div className="text-center">
-          <a href="#" className="px-6 py-3 beige-button-outlined inline-flex items-center hover:bg-secondary/50">
-            <span>Browse All Projects</span>
-            <FontAwesomeIcon 
-              icon={["fas", "arrow-right"]} 
-              className="ml-2 transition-transform duration-300 group-hover:translate-x-1" 
-            />
-          </a>
+          <button 
+            onClick={() => setShowAllProjects(!showAllProjects)} 
+            className="px-6 py-3 beige-button-outlined inline-flex items-center hover:bg-secondary/50"
+          >
+            <span>{showAllProjects ? "Show Less Projects" : "Browse All Projects"}</span>
+            <svg 
+              className={`ml-2 w-4 h-4 transition-transform duration-300 ${showAllProjects ? "rotate-90" : ""}`} 
+              fill="currentColor" 
+              viewBox="0 0 20 20" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                fillRule="evenodd" 
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
