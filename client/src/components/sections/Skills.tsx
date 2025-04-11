@@ -4,25 +4,25 @@ import { skillCategories, skillTags } from "@/lib/constants";
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-16 fade-in">
+    <section id="skills" className="py-20 fade-in">
       <div className="container-custom">
         <h2 className="section-title text-center">Technical Skills</h2>
         <p className="section-subtitle">Expertise across various technologies and domains</p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {/* Left column */}
           <div>
             <div className="space-y-8">
               {skillCategories.map((category, idx) => idx % 2 === 0 && (
-                <div key={category.id} className="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700">
+                <div key={category.id} className="beige-card p-6 backdrop-blur-sm bg-card">
                   <div className="flex items-center mb-6">
-                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary dark:text-primary-400 flex items-center justify-center mr-3">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary flex items-center justify-center mr-4 shadow-sm">
                       <FontAwesomeIcon icon={["fas", category.icon]} />
                     </div>
-                    <h3 className="text-xl font-semibold text-neutral-800 dark:text-white">{category.title}</h3>
+                    <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 font-serif">{category.title}</h3>
                   </div>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-5">
                     {category.skills.map((skill, index) => (
                       <SkillProgress key={index} skill={skill} />
                     ))}
@@ -30,22 +30,22 @@ const Skills = () => {
                 </div>
               ))}
               
-              <div className="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700">
+              <div className="beige-card p-6 backdrop-blur-sm bg-card">
                 <div className="flex items-center mb-6">
-                  <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary dark:text-primary-400 flex items-center justify-center mr-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary flex items-center justify-center mr-4 shadow-sm">
                     <FontAwesomeIcon icon={["fas", "cloud"]} />
                   </div>
-                  <h3 className="text-xl font-semibold text-neutral-800 dark:text-white">Cloud & DevOps</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 font-serif">Cloud & DevOps</h3>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   {skillTags["Cloud & DevOps"].map((tag, index) => (
-                    <div key={index} className="flex items-center bg-neutral-50 dark:bg-neutral-700/50 px-3 py-2 rounded border border-neutral-200 dark:border-neutral-600">
+                    <div key={index} className="flex items-center bg-secondary/50 dark:bg-secondary/40 px-3 py-2.5 rounded-md border border-border">
                       <FontAwesomeIcon 
                         icon={tag.icon.includes("-") ? ["fab", tag.icon] : ["fas", tag.icon]} 
-                        className="text-neutral-700 dark:text-neutral-300 mr-2" 
+                        className="text-primary dark:text-primary mr-2.5" 
                       />
-                      <span className="text-neutral-700 dark:text-neutral-300">{tag.name}</span>
+                      <span className="text-neutral-800 dark:text-neutral-200">{tag.name}</span>
                     </div>
                   ))}
                 </div>
@@ -57,15 +57,15 @@ const Skills = () => {
           <div>
             <div className="space-y-8">
               {skillCategories.map((category, idx) => idx % 2 === 1 && (
-                <div key={category.id} className="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700">
+                <div key={category.id} className="beige-card p-6 backdrop-blur-sm bg-card">
                   <div className="flex items-center mb-6">
-                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary dark:text-primary-400 flex items-center justify-center mr-3">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary flex items-center justify-center mr-4 shadow-sm">
                       <FontAwesomeIcon icon={["fas", category.icon]} />
                     </div>
-                    <h3 className="text-xl font-semibold text-neutral-800 dark:text-white">{category.title}</h3>
+                    <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 font-serif">{category.title}</h3>
                   </div>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-5">
                     {category.skills.map((skill, index) => (
                       <SkillProgress key={index} skill={skill} />
                     ))}
@@ -73,22 +73,22 @@ const Skills = () => {
                 </div>
               ))}
               
-              <div className="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700">
+              <div className="beige-card p-6 backdrop-blur-sm bg-card">
                 <div className="flex items-center mb-6">
-                  <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary dark:text-primary-400 flex items-center justify-center mr-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary flex items-center justify-center mr-4 shadow-sm">
                     <FontAwesomeIcon icon={["fas", "window-maximize"]} />
                   </div>
-                  <h3 className="text-xl font-semibold text-neutral-800 dark:text-white">Web Development</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 font-serif">Web Development</h3>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   {skillTags["Web Development"].map((tag, index) => (
-                    <div key={index} className="flex items-center bg-neutral-50 dark:bg-neutral-700/50 px-3 py-2 rounded border border-neutral-200 dark:border-neutral-600">
+                    <div key={index} className="flex items-center bg-secondary/50 dark:bg-secondary/40 px-3 py-2.5 rounded-md border border-border">
                       <FontAwesomeIcon 
                         icon={tag.icon.includes("-") ? ["fab", tag.icon] : ["fas", tag.icon]} 
-                        className="text-neutral-700 dark:text-neutral-300 mr-2" 
+                        className="text-primary dark:text-primary mr-2.5" 
                       />
-                      <span className="text-neutral-700 dark:text-neutral-300">{tag.name}</span>
+                      <span className="text-neutral-800 dark:text-neutral-200">{tag.name}</span>
                     </div>
                   ))}
                 </div>

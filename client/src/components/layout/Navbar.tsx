@@ -14,7 +14,7 @@ const menuLinks = [
 const MenuLink = ({ href, text, onClick, className = "" }: MenuLinkProps) => (
   <a
     href={href}
-    className={`text-neutral-600 hover:text-primary dark:text-neutral-300 dark:hover:text-primary-400 transition-colors ${className}`}
+    className={`text-neutral-700 hover:text-primary dark:text-neutral-300 dark:hover:text-primary font-medium transition-colors ${className}`}
     onClick={onClick}
   >
     {text}
@@ -44,11 +44,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`sticky top-0 z-50 backdrop-blur-md ${isScrolled ? "bg-white/90 dark:bg-neutral-900/90" : "bg-white/80 dark:bg-neutral-900/80"} border-b border-neutral-200 dark:border-neutral-800 transition-colors duration-200`}>
-      <div className="container-custom py-3 flex justify-between items-center">
+    <nav className={`sticky top-0 z-50 backdrop-blur-md ${isScrolled ? "bg-background/95 shadow-sm" : "bg-background/90"} border-b border-primary/10 dark:border-primary/10 transition-all duration-200`}>
+      <div className="container-custom py-4 flex justify-between items-center">
         {/* Logo/Name */}
-        <a href="#" className="text-xl font-semibold flex items-center space-x-2">
-          <span className="text-primary dark:text-primary-400">SL</span>
+        <a href="#" className="text-xl font-bold flex items-center space-x-2 font-serif">
+          <span className="text-primary dark:text-primary">SL</span>
         </a>
         
         {/* Nav Links - Desktop */}
@@ -58,13 +58,13 @@ const Navbar = () => {
           ))}
           <button 
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+            className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? (
-              <FontAwesomeIcon icon={["fas", "sun"]} className="text-neutral-300" />
+              <FontAwesomeIcon icon={["fas", "sun"]} className="text-primary" />
             ) : (
-              <FontAwesomeIcon icon={["fas", "moon"]} className="text-neutral-600" />
+              <FontAwesomeIcon icon={["fas", "moon"]} className="text-primary" />
             )}
           </button>
         </div>
@@ -72,15 +72,15 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={toggleMobileMenu}
-          className="md:hidden p-2 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+          className="md:hidden p-2 rounded-md bg-primary/10 hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
           aria-label="Toggle mobile menu"
         >
-          <FontAwesomeIcon icon={["fas", "bars"]} className="text-neutral-600 dark:text-neutral-300" />
+          <FontAwesomeIcon icon={["fas", mobileMenuOpen ? "times" : "bars"]} className="text-primary dark:text-primary" />
         </button>
       </div>
       
       {/* Mobile Menu */}
-      <div className={`md:hidden ${mobileMenuOpen ? "block" : "hidden"} px-4 py-2 pb-4 border-b border-neutral-200 dark:border-neutral-800`}>
+      <div className={`md:hidden ${mobileMenuOpen ? "block" : "hidden"} px-4 py-2 pb-4 border-b border-primary/10 bg-background/95 backdrop-blur-md`}>
         <div className="flex flex-col space-y-4">
           {menuLinks.map((link, index) => (
             <MenuLink 
@@ -93,16 +93,16 @@ const Navbar = () => {
           ))}
           <button 
             onClick={toggleTheme}
-            className="flex items-center space-x-2 text-neutral-600 dark:text-neutral-300 py-2"
+            className="flex items-center space-x-2 text-neutral-700 dark:text-neutral-300 py-2"
           >
             {theme === "dark" ? (
               <>
-                <FontAwesomeIcon icon={["fas", "sun"]} />
+                <FontAwesomeIcon icon={["fas", "sun"]} className="text-primary" />
                 <span>Light Mode</span>
               </>
             ) : (
               <>
-                <FontAwesomeIcon icon={["fas", "moon"]} />
+                <FontAwesomeIcon icon={["fas", "moon"]} className="text-primary" />
                 <span>Dark Mode</span>
               </>
             )}

@@ -7,15 +7,17 @@ interface SkillProgressProps {
 const SkillProgress = ({ skill }: SkillProgressProps) => {
   return (
     <div className="flex flex-col">
-      <div className="flex justify-between mb-1">
-        <span className="text-neutral-700 dark:text-neutral-300">{skill.name}</span>
-        <span className="text-neutral-500 dark:text-neutral-400 text-sm">{skill.level}</span>
+      <div className="flex justify-between mb-2">
+        <span className="text-neutral-800 dark:text-neutral-200 font-medium">{skill.name}</span>
+        <span className="text-primary dark:text-primary text-sm font-medium">{skill.level}</span>
       </div>
-      <div className="h-1 bg-neutral-200 dark:bg-neutral-700 rounded-sm overflow-hidden">
+      <div className="h-2 bg-secondary/80 dark:bg-secondary/50 rounded-full overflow-hidden shadow-inner">
         <div 
-          className="h-full bg-primary rounded-sm" 
+          className="h-full bg-primary dark:bg-primary rounded-full relative"
           style={{ width: `${skill.percentage}%` }}
-        ></div>
+        >
+          <div className="absolute inset-0 bg-white/20 dark:bg-white/10 opacity-50"></div>
+        </div>
       </div>
     </div>
   );
