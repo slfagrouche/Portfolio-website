@@ -1,0 +1,70 @@
+Said Lfagrouche
+New York, NY | (646) 972-8875 | SaidLfagrouche@gmail.com | Linkedin.com/in/saidlfagrouche | Github.com/slfagrouche | SaidLfagrouche.com
+EDUCATION
+Brooklyn College Brooklyn, NY
+Bachelor of Science in Computer Science, Minor in Data Science | GPA: 3.84/4.00 Expected May 2025
+Awards & Honors: Dean's List (Fall '21 - Fall '24), Gilman Scholar, MLT Ascend Scholar, Elaine Friedman Scholar
+TECHNICAL SKILLS
+Languages & Tools: Python, Java, C++, SQL, Git, Linux, Docker, AWS, GCP, Postman, Tableau
+ML & AI: TensorFlow, PyTorch, Hugging Face, LangChain, Milvus, Scikit-learn, Pandas, NumPy
+Data & Frameworks: MongoDB, Weaviate, RAG, Spring Boot, Django, Flask
+Certifications: Cornell Univ. Machine Learning (6 weeks), DeepLearning.AI (LLMOps, LangChain, Finetuning LLMs)
+WORK EXPERIENCE
+AI4ALL New York, NY
+Machine Learning Fellow Sep 2024 – Present
+●
+Engineered a facial emotion recognition model using Python, Support Vector Machine, and Histogram of
+Oriented Gradients, boosting accuracy by 15% through ensemble methods and advanced feature extraction
+●
+Devised a bias-mitigation pipeline with scikit-learn and OpenCV, reducing underrepresented class errors by
+20% via enhanced preprocessing and class balancing
+●
+Implemented an end-to-end ML pipeline using NumPy, Pandas, and scikit-learn for robust feature extraction and
+model interpretability
+Salesforce San Francisco, CA
+Software Engineering Intern Jun 2024 – Aug 2024
+●
+Designed and optimized APIs using Java and Spring Boot for the "Calculate Insights" product, increasing data
+processing efficiency by 20% and reducing latency by 35% for over 100,000 daily user requests
+●
+Implemented a scalable vector similarity search system using Milvus, enabling real-time querying of 10 million+
+customer records with sub-second response times, improving recommendation accuracy by 40% in Data Cloud
+●
+Enhanced reliability by code reviews and deploying a CI/CD pipeline (Jenkins, Docker) with Postman API testing
+and Splunk logging—delivering 50% faster deployments and reducing incident response times by 35%
+CUNY Tech Prep New York, NY
+Data Science Fellow Aug 2023 – May 2024
+●
+Mastered advanced ML/AI frameworks (PyTorch, TensorFlow) through intensive 12-month fellowship program,
+building production-ready ML models that served 1000+ users through GCP Cloud Run
+●
+Created the BetterChef cooking application using LangChain and RAG architecture, processing 4.6GB dataset of
+400,000+ recipes to provide accurate culinary recommendations with 20% improved accuracy
+●
+Spearheaded efforts to streamline model training processes by integrating advanced tools like scikit-learn and
+TensorFlow, leading to improved processing speed for over 10 distinct ML applications deployed via GCP
+PROJECTS
+TUTOR (Python, Flask, Google Cloud API, Hugging Face, FAISS, RAG) – GitHub Apr 2024 – May 2024
+●
+Orchestrated a multimodal education platform using Flask and Google Cloud APIs, implementing a FAISS vector
+database and RAG architecture to process 1,000+ audio/PDF files with 95% extraction accuracy
+●
+Enabled real-time content analysis while reducing AI hallucinations by 40%
+Real Estate Market Analysis (Pandas, NumPy, scikit-learn) – GitHub Apr 2024 – May 2024
+●
+Constructed a Python data pipeline analyzing 2.2M+ U.S. real estate listings, identifying 5 market segments and
+reducing anomalies by 40%
+●
+Devised a statistical suite (ANOV A, Chi-square, time-series) to uncover price-feature relationships and trends
+LEADERSHIP EXPERIENCE
+Lead AI Engineer, Campus AI Community | City Tech University Dec 2024 – Present
+●
+Engineered AI-driven web scraping with Firecrawler to extract educational resources, delivering real-time
+insights that boosted data accuracy by 25% and served 1000+ CUNY undergrad students monthly
+●
+Mentored team members and drove innovation by deploying AI NLP chatbots using LangChain, MongoDB,
+and AWS SageMaker—streamlining support, boosting engagement by 40%, and achieving 95% accuracy
+Founder & CEO, SafeGuard (Nonprofit) | GitHub Aug 2024 – Present
+●
+Developed a life-saving incident reporting app using AWS S3, Lambda, and EC2—integrating AI agents with
+RAG to deliver notifications and alerts, cutting emergency response times by 30% and serving 1000+ users

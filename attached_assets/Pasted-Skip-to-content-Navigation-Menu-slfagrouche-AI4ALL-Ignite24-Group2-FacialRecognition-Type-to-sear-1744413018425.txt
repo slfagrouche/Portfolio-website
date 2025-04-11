@@ -1,0 +1,155 @@
+Skip to content
+Navigation Menu
+slfagrouche
+AI4ALL-Ignite24-Group2-FacialRecognition
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Owner avatar
+AI4ALL-Ignite24-Group2-FacialRecognition
+Public
+slfagrouche/AI4ALL-Ignite24-Group2-FacialRecognition
+Name		
+ 
+docs
+ 
+ 
+models
+ 
+ 
+notebooks
+ 
+ 
+references
+ 
+ 
+reports
+ 
+ 
+.gitignore
+ 
+ 
+LICENSE
+ 
+ 
+Makefile
+ 
+ 
+README.md
+ 
+ 
+pyproject.toml
+ 
+ 
+requirements.txt
+ 
+ 
+setup.cfg
+ 
+ 
+Repository files navigation
+README
+MIT license
+facial_recognition_project
+This project is part of AI4ALL Ignite '24 - Group 2, focusing on Computer Vision. The main objective is to explore, develop, and implement facial recognition technologies using deep learning techniques. The repository contains data processing scripts, model training code, and a web interface to demonstrate the application of facial recognition for real-world use cases.
+
+Project Organization
+├── LICENSE            <- Open-source license if one is chosen
+├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
+├── README.md          <- The top-level README for developers using this project.
+├── data
+│   ├── external       <- Data from third party sources.
+│   ├── interim        <- Intermediate data that has been transformed.
+│   ├── processed      <- The final, canonical data sets for modeling.
+│   └── raw            <- The original, immutable data dump.
+│
+├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+│
+├── models             <- Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+│                         the creator's initials, and a short `-` delimited description, e.g.
+│                         `1.0-jqp-initial-data-exploration`.
+│
+├── pyproject.toml     <- Project configuration file with package metadata for 
+│                         facial_recognition_project and configuration for tools like black
+│
+├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+│
+├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+│   └── figures        <- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`
+│
+├── setup.cfg          <- Configuration file for flake8
+│
+└── facial_recognition_project   <- Source code for use in this project.
+    │
+    ├── __init__.py             <- Makes facial_recognition_project a Python module
+    │
+    ├── config.py               <- Store useful variables and configuration
+    │
+    ├── dataset.py              <- Scripts to download or generate data
+    │
+    ├── features.py             <- Code to create features for modeling
+    │
+    ├── modeling                
+    │   ├── __init__.py 
+    │   ├── predict.py          <- Code to run model inference with trained models          
+    │   └── train.py            <- Code to train models
+    │
+    └── plots.py                <- Code to create visualizations
+About
+No description, website, or topics provided.
+Resources
+ Readme
+License
+ MIT license
+ Activity
+Stars
+ 1 star
+Watchers
+ 1 watching
+Forks
+ 3 forks
+Releases
+No releases published
+Create a new release
+Packages
+No packages published
+Publish your first package
+Languages
+Jupyter Notebook
+99.3%
+ 
+Makefile
+0.7%
+Suggested workflows
+Based on your tech stack
+SLSA Generic generator logo
+SLSA Generic generator
+Generate SLSA3 provenance for your existing release workflows
+Build projects with Make logo
+Build projects with Make
+Build and test a project using Make.
+More workflows
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+Manage cookies
+Do not share my personal information

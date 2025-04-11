@@ -52,7 +52,7 @@ export const projects: Project[] = [
     description: "Crisis monitoring platform for real-time incident tracking and alerts in humanitarian crisis areas using AI verification.",
     imageUrl: "https://images.unsplash.com/photo-1606765962248-7ff407b51667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "AWS", "FastAPI", "LangChain", "React"],
-    projectUrl: "#",
+    projectUrl: "https://github.com/slfagrouche/SafeGuard",
     hasInteractiveDemo: true,
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
@@ -63,9 +63,50 @@ export const projects: Project[] = [
     description: "Interactive interview practice platform using AI to simulate real interviews and provide feedback for job seekers.",
     imageUrl: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["JavaScript", "React", "OpenAI", "Node.js", "MongoDB"],
-    projectUrl: "#",
+    projectUrl: "https://github.com/slfagrouche/AI-Powered-Mock-Interview",
     hasInteractiveDemo: true,
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: 5,
+    title: "Real Estate Market Analysis",
+    category: "AI/ML",
+    description: "Analysis of 2.2 million Realtor.com listings using Python and machine learning to uncover U.S. real estate market patterns, identifying market segments and predicting property prices.",
+    imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Seaborn"],
+    projectUrl: "https://github.com/slfagrouche/Real-Estate-Market-Analysis",
+    hasInteractiveDemo: false
+  },
+  {
+    id: 6,
+    title: "TUTOR - AI Educational Assistant",
+    category: "AI/ML",
+    description: "An AI-powered educational assistant for audio transcription, PDF text extraction, and context-aware Q&A using LangChain and RAG architecture.",
+    imageUrl: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "LangChain", "Flask", "FAISS", "Google Cloud API"],
+    projectUrl: "https://github.com/slfagrouche/TUTOR",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: 7,
+    title: "KitchenTeacher",
+    category: "Web Development",
+    description: "Interactive web application that predicts dishes from food images, provides YouTube recipe videos, and fetches detailed recipe instructions.",
+    imageUrl: "https://images.unsplash.com/photo-1556911220-bda9f33a8b25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "Gradio", "Hugging Face", "TheMealDB API", "YouTube API"],
+    projectUrl: "https://github.com/slfagrouche/KitchenTeacher",
+    hasInteractiveDemo: false
+  },
+  {
+    id: 8,
+    title: "Facial Emotion Recognition",
+    category: "AI/ML",
+    description: "A facial recognition system developed for the AI4ALL fellowship program that classifies 7 emotions with 92% accuracy across 35,000+ images.",
+    imageUrl: "https://images.unsplash.com/photo-1523450001304-caac55e84396?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "OpenCV", "TensorFlow", "Scikit-learn", "SVMs", "CNNs"],
+    projectUrl: "https://github.com/slfagrouche/AI4ALL-Ignite24-Group2-FacialRecognition",
+    hasInteractiveDemo: false
   }
 ];
 
@@ -92,6 +133,18 @@ export const experiences: Experience[] = [
   },
   {
     id: 2,
+    company: "AI4ALL",
+    position: "Machine Learning Fellow",
+    period: "Sep 2024 - Mar 2025",
+    responsibilities: [
+      "Developed a facial emotion recognition system using SVMs and CNN models that classified 7 emotions with 92% accuracy across 35,000+ images",
+      "Implemented data augmentation and feature engineering techniques that reduced bias by 40% and improved model performance on underrepresented classes",
+      "Collaborated with Meta and Microsoft AI engineers to optimize model architecture, reducing inference time by 75% while maintaining accuracy benchmarks"
+    ],
+    isRight: true
+  },
+  {
+    id: 3,
     company: "Computer Software Solutions LLC",
     position: "Back-end Developer",
     period: "Nov 2024 - Present",
@@ -100,10 +153,10 @@ export const experiences: Experience[] = [
       "Architected an ML-powered resume parsing system using NLP, increasing matching accuracy by 35%",
       "Optimized MongoDB initiatives decreasing query response times by 65%, with 85% SonarQube code coverage"
     ],
-    isRight: true
+    isRight: false
   },
   {
-    id: 3,
+    id: 4,
     company: "SafeGuard",
     position: "Founder",
     period: "Aug 2024 - Present",
@@ -114,7 +167,7 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     company: "Salesforce",
     position: "Software Engineer Intern",
     period: "Jun 2024 - Aug 2024",
@@ -126,7 +179,7 @@ export const experiences: Experience[] = [
     isRight: true
   },
   {
-    id: 5,
+    id: 6,
     company: "CUNY Tech Prep",
     position: "Data Science Fellow",
     period: "Aug 2023 - May 2024",

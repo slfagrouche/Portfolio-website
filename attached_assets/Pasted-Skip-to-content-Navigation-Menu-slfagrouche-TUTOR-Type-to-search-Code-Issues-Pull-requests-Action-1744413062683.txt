@@ -1,0 +1,192 @@
+Skip to content
+Navigation Menu
+slfagrouche
+TUTOR
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Owner avatar
+TUTOR
+Public
+slfagrouche/TUTOR
+Name		
+ 
+setup
+ 
+ 
+static
+ 
+ 
+templates
+ 
+ 
+.gitignore
+ 
+ 
+DISCLAIMER.md
+ 
+ 
+LICENSE
+ 
+ 
+README.md
+ 
+ 
+app.py
+ 
+ 
+requirements.txt
+ 
+ 
+runtime.txt
+ 
+ 
+streamlitApp.py
+ 
+ 
+vercel.json
+ 
+ 
+webAppDemo.md
+ 
+ 
+wsgi.py
+ 
+ 
+Repository files navigation
+README
+MIT license
+TUTOR
+TUTOR is an AI-powered educational assistant designed to help users with audio transcription, PDF text extraction, and question answering. It leverages advanced AI models and Retrieval-Augmented Generation (RAG) to provide accurate and contextually relevant responses based on uploaded content.
+
+
+
+Flask LangChain Transformers Torch Google%20Generative%20AI
+
+🚀 Features
+🎙️ Audio Transcription: Upload audio files and get accurate transcriptions instantly.
+📄 PDF Text Extraction: Extract valuable insights from PDF documents effortlessly.
+💬 Question Answering: Ask questions based on uploaded content and get AI-powered answers.
+🧠 General AI Tutor: Ask general questions and receive context-aware AI responses.
+🎯 Why TUTOR is Different?
+Traditional LLM applications often struggle with delivering accurate, context-aware answers. TUTOR leverages Retrieval-Augmented Generation (RAG) to combine the power of large language models with a curated knowledge base.
+
+This ensures:
+
+Responses are not solely based on pre-trained data.
+Answers are grounded in the specific content provided by the user (audio transcriptions or PDF text).
+Enhanced accuracy and contextual relevance.
+🌐 Try Out TUTOR
+Streamlit Version: Try the online version of TUTOR directly at Streamlit App Link.
+Web App Version: The Flask web app version needs to be installed and run locally following the Setup Instructions. and demo is here for web app
+🖼️ Web App Demo (Screenshots Preview)
+⚙️ Setup Instructions
+For detailed setup instructions, please refer to the Setup Instructions file.
+
+Quick Start:
+
+# Clone the repository
+git clone https://github.com/slfagrouche/TUTOR.git
+cd TUTOR
+
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Add API keys to .env
+# Run the app
+python app.py
+🤝 Contributing
+We welcome contributions! Follow these steps:
+
+Fork the repository.
+Create your feature branch:
+git checkout -b feature/AmazingFeature
+Commit your changes:
+git commit -m "Add some AmazingFeature"
+Push to your branch:
+git push origin feature/AmazingFeature
+Open a Pull Request.
+📄 License
+Distributed under the MIT License. See the LICENSE file for more information.
+
+⚠️ Disclaimer
+Please see DISCLAIMER.md for important information about AI-generated content and its limitations.
+
+For further assistance, reach out via GitHub Issues.
+
+Happy Coding! :)
+
+About
+TOTUR is an AI-powered educational assistant designed to help users with audio transcription, PDF text extraction, and question answering. It leverages advanced AI models and Retrieval-Augmented Generation (RAG) to provide accurate and contextually relevant responses based on uploaded content.
+
+tutor-ai-assistant.streamlit.app/
+Topics
+education chatbot huggingface-transformers llm generative-ai langchain
+Resources
+ Readme
+License
+ MIT license
+ Activity
+Stars
+ 1 star
+Watchers
+ 1 watching
+Forks
+ 1 fork
+Releases
+No releases published
+Create a new release
+Packages
+No packages published
+Publish your first package
+Contributors
+2
+ 
+ 
+Languages
+Python
+66.7%
+ 
+HTML
+25.3%
+ 
+CSS
+5.6%
+ 
+JavaScript
+2.4%
+Suggested workflows
+Based on your tech stack
+Publish Python Package logo
+Publish Python Package
+Publish a Python Package to PyPI on release.
+Python package logo
+Python package
+Create and test a Python package on multiple Python versions.
+Python application logo
+Python application
+Create and test a Python application.
+More workflows
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+Manage cookies
+Do not share my personal information

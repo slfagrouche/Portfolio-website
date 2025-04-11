@@ -1,0 +1,67 @@
+Said Lfagrouche
+New York, NY | (646) 972-8875 | SaidLfagrouche@gmail.com | Linkedin.com/in/saidlfagrouche | Github.com/slfagrouche | SaidLfagrouche.com
+EDUCATION
+Brooklyn College Brooklyn, NY
+Bachelor of Science in Computer Science, Minor in Data Science | GPA: 3.84/4.00 Expected May 2025
+Awards & Honors: Dean's List (Fall '21 - Fall '24), Gilman Scholar, MLT Ascend Scholar, Elaine Friedman Scholar
+TECHNICAL SKILLS
+Programming Languages: Proficient - Python, Java, C++, SQL | Familiar - HTML/CSS, JavaScript
+Software/Tools: AWS, GCP, Postman, Swagger, Docker, Git, Jenkins, CI/CD, Linux, Pulumi
+Libraries & Frameworks: Spring Boot, Django, Flask, MongoDB, Hugging Face, Milvus, Pandas, NumPy, LangChain
+WORK EXPERIENCE
+Computer Software Solutions LLC New York, NY
+Backend Engineering Intern Nov 2024 – Present
+●
+Architect and optimize RESTful APIs for ReviewProbe.com using Java and 7 Spring Boot microservices,
+implementing Swagger docs and Postman tests to achieve 30% faster response times for 100K+ daily requests
+●
+Devise an LLM-driven resume parser in Java, leveraging AWS Lambda functions and deployed on EC2
+auto-scaling, achieving 95% accuracy and reducing manual review time by 80% for 1000+ daily resumes
+●
+Construct a CI/CD pipeline with AWS CodePipeline and Docker—integrating EvoTest AI and TestSpark—to
+deliver 40% faster deployments, 85% test coverage, and 60% fewer SonarQube defects, eliminating rollbacks
+Salesforce San Francisco, CA
+Software Engineering Intern Jun 2024 – Aug 2024
+●
+Designed and optimized APIs using Java and Spring Boot for the "Calculate Insights" product, increasing data
+processing efficiency by 20% and reducing latency by 35% for over 100,000 daily user requests
+●
+Implemented a scalable vector similarity search system using Milvus, enabling real-time querying of 10 million+
+customer records with sub-second response times, improving recommendation accuracy by 40% in Data Cloud
+●
+Enhanced reliability by code reviews and deploying a CI/CD pipeline (Jenkins, Docker) with Postman API
+testing and Splunk logging—delivering 50% faster deployments and reducing incident response times by 35%
+XRSI – XR Safety Initiative New York, NY
+Software Engineering Intern Jan 2023 – Nov 2023
+●
+Architected high-performance REST APIs in Python with a WordPress headless CMS for XR safety
+features—optimizing efficiency by 20%, serving 50+ stakeholders
+●
+Streamlined SQL queries and database indexing, reducing data retrieval time by 30% for 10K+ daily requests
+●
+Executed a pytest/Jenkins CI/CD pipeline achieving 90% test coverage & reducing bugs by 40% through tests
+PROJECTS
+TUTOR (Python, Flask, Google Cloud API, Hugging Face, FAISS, GCP) – GitHub Apr 2024 – May 2024
+●
+Built AI-powered educational platform using Flask, FAISS vectors, Google Cloud APIs and RAG, reduced LLM
+hallucinations by 98%, processed 1000+ documents, implemented real-time analysis for PDF/audio content
+BetterChef (GenAI, REST-API, OpenAI, LangChain, MongoDB) – GitHub Feb 2024 – May 2024
+●
+Created AI-powered cooking app with LangChain, OpenAI, RAG and MongoDB Atlas, improved recipe accuracy
+20%, scaled to 100K+ users, automated meal planning through LLM context learning and user preferences
+LEADERSHIP EXPERIENCE
+Lead AI Engineer, Campus AI Community | City Tech University Dec 2024 – Present
+●
+Engineer AI-driven web scraping with Firecrawler to extract educational resources, delivering real-time insights
+that boosted data accuracy by 25% and served 1000+ CUNY undergrad students monthly
+●
+Mentor team members and drove innovation by deploying AI NLP chatbots using LangChain, MongoDB, and
+AWS SageMaker—streamlining support, boosting engagement by 40%, and achieving 95% accuracy
+Founder & CEO, SafeGuard (Nonprofit) | GitHub Aug 2024 – Present
+●
+Develop a life-saving incident reporting app using AWS S3, Lambda, and EC2—integrating AI agents with
+RAG to deliver notifications and alerts, cutting emergency response times by 30% and serving 1000+ users
+Peer Mentor, Computer Science | Brooklyn College Jan 2023 – Jun 2023
+●
+Mentored 70+ first-year CS students, optimizing academic planning and campus integration by launching peer-led
+workshops and career sessions, increasing student retention by 30% and engagement in tech clubs by 50%
