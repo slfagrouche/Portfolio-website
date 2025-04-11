@@ -48,6 +48,7 @@ export const projects: Project[] = [
     technologies: ["Python", "AWS", "FastAPI"],
     projectUrl: "#",
   },
+  
 ];
 
 export type Experience = {
@@ -62,36 +63,59 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     id: 1,
-    company: "Computer Software Solutions LLC",
-    position: "Back-end Developer Intern",
-    period: "Nov 2024 - Present",
+    company: "City Tech, CUNY",
+    position: "Lead AI Engineer, Campus AI Community",
+    period: "Dec 2024 - Present",
     responsibilities: [
-      "Build and maintain backend systems using Java and Spring Boot",
-      "Designed a resume-parsing feature with LLMs, improving accuracy and efficiency",
-      "Improved code quality with IntelliJ IDEA LLM plugins"
+      "Engineered AI-driven web scraping with Firecrawler to extract educational resources, boosting data accuracy by 25%",
+      "Mentored team members and deployed AI NLP chatbots using LangChain, MongoDB, and AWS SageMaker",
+      "Increased support engagement by 40% while achieving 95% accuracy with AI implementation"
     ]
   },
   {
     id: 2,
-    company: "Salesforce",
-    position: "Software Engineering Intern",
-    period: "Jun 2024 - Aug 2024",
+    company: "Computer Software Solutions LLC",
+    position: "Back-end Developer",
+    period: "Nov 2024 - Present",
     responsibilities: [
-      "Designed and optimized APIs for Salesforce Data Cloud",
-      "Implemented cloud infrastructure solutions using AWS",
-      "Collaborated with cross-functional teams to develop features"
+      "Engineered Java/Spring Boot microservices, implementing CI/CD pipelines with Docker and Kubernetes",
+      "Architected an ML-powered resume parsing system using NLP, increasing matching accuracy by 35%",
+      "Optimized MongoDB initiatives decreasing query response times by 65%, with 85% SonarQube code coverage"
     ],
     isRight: true
   },
   {
     id: 3,
+    company: "SafeGuard",
+    position: "Founder",
+    period: "Aug 2024 - Present",
+    responsibilities: [
+      "Founded incident reporting app using Django and AWS, integrating AI agents with RAG to cut response times by 30%",
+      "Engineered LangChain-based verification agents that cut false positives by 73%",
+      "Designed scalable DynamoDB/EC2/S3 backend handling 200+ concurrent users with sub-200ms response times"
+    ]
+  },
+  {
+    id: 4,
+    company: "Salesforce",
+    position: "Software Engineer Intern",
+    period: "Jun 2024 - Aug 2024",
+    responsibilities: [
+      "Worked with the CRM Data Cloud Solutions Team",
+      "Implemented solutions using Python and web infrastructure",
+      "Focused on software construction and computer information systems"
+    ],
+    isRight: true
+  },
+  {
+    id: 5,
     company: "CUNY Tech Prep",
     position: "Data Science Fellow",
     period: "Aug 2023 - May 2024",
     responsibilities: [
-      "Focused on predicting Amazon product review ratings using Neural Networks and NLP",
-      "Achieved 90% accuracy through a Deep Neural Network with Bag of Words vectorization",
-      "Demonstrated the project's predictive capabilities on a 10% sample of a 54.41 GB dataset"
+      "Developed PyTorch DNNs using NLP/BoW for Amazon rating prediction with 90% accuracy on 5.4GB data",
+      "Executed large-scale NLP data processing enabling robust feature engineering",
+      "Presented predictive capabilities highlighting business value in extracting patterns from user reviews"
     ]
   }
 ];
@@ -213,11 +237,16 @@ export const aboutDetails = {
   },
   certifications: {
     title: "Cornell University ML Foundations",
-    others: "Multiple DeepLearning.AI Certificates"
+    others: "AI4ALL Certificate, CodePath Certificate"
   },
   currentPosition: {
-    title: "Back-end Developer Intern",
-    company: "Computer Software Solutions LLC",
-    description: "Building and maintaining backend systems using Java and Spring Boot, implementing resume-parsing features with LLMs."
-  }
+    title: "Lead AI Engineer",
+    company: "City Tech, CUNY",
+    description: "Leading AI engineering initiatives, deploying NLP chatbots with LangChain, and building web scraping solutions with Firecrawler for educational resources."
+  },
+  fellowships: [
+    "Apple Pathways Alliance Scholar (Sep 2024 - Present)",
+    "AI4ALL Machine Learning Fellow (Sep 2024 - Mar 2025)",
+    "MLT Career Prep '25 Software Engineering Fellow (Jan 2023 - Dec 2024)"
+  ]
 };

@@ -44,10 +44,6 @@ const Hero = () => {
                 <FontAwesomeIcon icon={["fas", "envelope"]} />
                 <span>Contact Me</span>
               </a>
-              <a href={personalInfo.resumeUrl} className="px-6 py-3 beige-button-outlined flex items-center space-x-2">
-                <FontAwesomeIcon icon={["fas", "download"]} />
-                <span>Download CV</span>
-              </a>
             </div>
             <SocialLinks links={socialLinks} className="mt-8 justify-center md:justify-start" />
           </div>

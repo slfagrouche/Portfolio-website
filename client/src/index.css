@@ -16,9 +16,9 @@
     --popover: 39 25% 98%;
     --popover-foreground: 30 10% 25%;
     
-    /* Primary colors - Beige */
-    --primary: 36 30% 74%;
-    --primary-foreground: 30 10% 20%;
+    /* Primary colors - Darker Beige for better contrast */
+    --primary: 36 35% 55%;
+    --primary-foreground: 0 0% 100%;
     
     /* Secondary colors */
     --secondary: 32 25% 92%;
