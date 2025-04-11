@@ -102,8 +102,8 @@ const Contact = () => {
                       >
                         <span className="group-hover:underline">linkedin.com/in/saidlfagrouche</span>
                         <FontAwesomeIcon 
-                          icon={["fas", "arrow-up-right-from-square"]} 
-                          className="ml-1.5 text-xs transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
+                          icon={["fas", "arrow-right"]} 
+                          className="ml-1.5 text-xs transition-transform duration-300 group-hover:translate-x-1" 
                         />
                       </a>
                     </div>
@@ -123,8 +123,8 @@ const Contact = () => {
                       >
                         <span className="group-hover:underline">github.com/slfagrouche</span>
                         <FontAwesomeIcon 
-                          icon={["fas", "external-link-alt"]} 
-                          className="ml-1.5 text-xs transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
+                          icon={["fas", "arrow-right"]} 
+                          className="ml-1.5 text-xs transition-transform duration-300 group-hover:translate-x-1" 
                         />
                       </a>
                     </div>

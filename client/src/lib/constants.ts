@@ -162,6 +162,50 @@ export const skillTags: { [key: string]: SkillTag[] } = {
 
 export const projectCategories = ["All", "AI/ML", "Web Development", "Cloud"];
 
+export type BlogPost = {
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  category: string;
+  imageUrl: string;
+  slug: string;
+};
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: 1,
+    title: "The Future of AI in Software Development",
+    excerpt: "How AI is transforming the way we build software and what developers need to know to stay ahead of the curve.",
+    date: "April 2, 2025",
+    readTime: "5 min read",
+    category: "AI",
+    imageUrl: "https://images.unsplash.com/photo-1677442135046-2d073f3429a4?q=80&w=500&auto=format&fit=crop",
+    slug: "future-of-ai-in-software-development"
+  },
+  {
+    id: 2,
+    title: "Building Scalable Applications with React and Node.js",
+    excerpt: "A comprehensive guide to architecting large-scale applications using React and Node.js while maintaining performance.",
+    date: "March 15, 2025",
+    readTime: "8 min read",
+    category: "Web Development",
+    imageUrl: "https://images.unsplash.com/photo-1546900703-cf06143d1239?q=80&w=500&auto=format&fit=crop",
+    slug: "building-scalable-applications-react-nodejs"
+  },
+  {
+    id: 3,
+    title: "Optimizing Cloud Costs for Startups",
+    excerpt: "Practical strategies for managing and optimizing your cloud infrastructure costs while maintaining high performance.",
+    date: "February 23, 2025",
+    readTime: "6 min read",
+    category: "Cloud",
+    imageUrl: "https://images.unsplash.com/photo-1603695360804-28c7eb917f7a?q=80&w=500&auto=format&fit=crop",
+    slug: "optimizing-cloud-costs-startups"
+  }
+];
+
 export const aboutDetails = {
   education: {
     degree: "BSc. in Computer Science, Minor in Data Science",
