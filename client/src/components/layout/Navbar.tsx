@@ -8,6 +8,7 @@ const menuLinks = [
   { href: "#projects", text: "Projects" },
   { href: "#experience", text: "Experience" },
   { href: "#skills", text: "Skills" },
+  { href: "#blog", text: "Blog" },
   { href: "#contact", text: "Contact" },
 ];
 
