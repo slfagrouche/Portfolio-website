@@ -1,0 +1,127 @@
+01
+BetterChef: AI-Powered Cooking Assistant
+BetterChef Project Image
+BetterChef is an AI-powered cooking assistant designed to revolutionize home cooking. It provides personalized recipes, automated meal planning, and real-time cooking guidance. Key features include:
+Personalized recipe recommendations based on user preferences and available ingredients
+Intelligent meal planning that considers dietary restrictions and nutritional goals
+Real-time cooking guidance with step-by-step instructions
+Advanced ingredient substitution suggestions
+Smart shopping list generation
+Technologies: Python, TensorFlow, Natural Language Processing, Computer Vision, Flask, RESTful APIs
+View on GitHub
+02
+TUTOR: AI-Powered Educational Assistant
+TUTOR Project Image
+TUTOR is an AI-powered educational assistant designed to help users with audio transcription, PDF text extraction, and question answering. It leverages advanced AI models and Retrieval-Augmented Generation (RAG) for accurate responses. Key features include:
+PDF text extraction and analysis for comprehensive document understanding
+Audio lecture transcription with intelligent summarization
+Context-aware question answering using RAG
+Integration with MongoDB and Weaviate for efficient data management
+Utilization of advanced language models for accurate responses
+Technologies: Python, LangChain, Hugging Face Transformers, MongoDB, Weaviate, PyTorch
+View on GitHub
+03
+The Swinging Snake Game
+Snake Game Project Image
+A modernized interpretation of the classic Snake game, demonstrating solid programming fundamentals and game development skills. Features include:
+Smooth, responsive controls for enhanced player experience
+Progressive difficulty scaling for engaging gameplay
+Dynamic level generation with increasing challenges
+Score tracking and high score management
+Clean, object-oriented design showcasing software engineering principles
+Technologies: Java, Swing GUI, Object-Oriented Programming, Event-Driven Programming
+View on GitHub
+04
+Brooklyn College RAG QA BOT
+RAG QA BOT Project Image
+A specialized question-answering system built on the Brooklyn College Student Handbook. It provides accurate and contextual responses to student queries using semantic search and GPT-3.5. Key features include:
+Semantic search functionality for precise information retrieval
+Integration with MongoDB and Weaviate for efficient data storage
+GPT-3.5 powered responses for natural language understanding
+Comprehensive coverage of student handbook content
+Real-time query processing and response generation
+Technologies: Python, MongoDB, Weaviate, GPT-3.5, Natural Language Processing
+View on GitHub
+05
+Rating Predictor From Reviews
+Rating Predictor Project Image
+This project predicts product ratings from reviews using Neural Networks and Natural Language Processing (NLP). It analyzes a 10% sample of Kaggle's Amazon dataset and provides insights into rating prediction. Key features include:
+Neural Network implementation for rating prediction
+Natural Language Processing for review analysis
+Dataset processing from Amazon's review database
+Comprehensive methodology documentation
+Performance metrics and analysis
+Technologies: Python, Neural Networks, NLP, Jupyter Notebook, Data Analysis
+View on GitHub
+06
+KitchenTeacher
+KitchenTeacher Project Image
+A Gradio app that predicts dishes from uploaded food images, provides recipe details, and suggests YouTube video guides for cooking. Key features include:
+Image-based dish recognition
+Recipe details and cooking instructions
+YouTube video suggestions for guided cooking
+User-friendly interface for seamless interaction
+Technologies: Python, Gradio, Image Recognition, YouTube API
+View on GitHub
+07
+Live Weather App
+Weather App Project Image
+A real-time weather application that provides current weather information using the OpenWeatherMap API. Key features include:
+Current location weather updates
+Global location search functionality
+Real-time data refresh
+Clean and intuitive user interface
+Comprehensive weather metrics display
+Technologies: Python, OpenWeatherMap API, GUI Development, API Integration
+View on GitHub
+08
+Pencil Sketch Converter
+Sketch Converter Project Image
+An image processing application that transforms regular images into pencil sketch style artwork. Key features include:
+Image upload functionality
+Real-time conversion processing
+OpenCV-based image manipulation
+User-friendly Tkinter interface
+Multiple sketching effects options
+Technologies: Python, OpenCV, Tkinter, Image Processing
+View on GitHub
+09
+Digital Tally Counter
+Tally Counter Project Image
+A practical Java Swing application for keeping track of counts. Key features include:
+Intuitive increment/decrement controls
+Count persistence functionality
+Reset capability
+Clean user interface
+Multiple counter support
+Technologies: Java, Swing, Event Handling, File I/O
+View on GitHub
+10
+Tic-Tac-Toe AI Game
+Tic-Tac-Toe Project Image
+A classic game implementation featuring AI opponent capabilities. Key features include:
+AI-powered opponent with strategic gameplay
+Interactive game board interface
+Win condition validation
+Score tracking system
+Multiple difficulty levels
+Technologies: Java, Game AI, GUI Development, Event Handling
+View on GitHub
+11
+AI4ALL Ignite24 Facial Recognition
+Facial Recognition Project Image
+A facial recognition project developed as part of the AI4ALL Ignite24 program. It leverages advanced AI techniques to identify and analyze faces in images. Key features include:
+Facial detection and recognition
+Integration with AI models for accurate analysis
+User-friendly interface for testing and visualization
+Technologies: Python, Jupyter Notebook, AI Models
+View on GitHub
+12
+USA Real Estate Project
+Real Estate Project Image
+A project focused on analyzing and visualizing real estate data in the USA. Key features include:
+Data collection and preprocessing
+Interactive visualizations for real estate trends
+Insights into property prices and market dynamics
+Technologies: Python, Data Analysis, Visualization Tools
+View on GitHub
