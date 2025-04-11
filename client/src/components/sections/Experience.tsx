@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { experiences } from "@/lib/constants";
 
 const Experience = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showAllExperiences, setShowAllExperiences] = useState(false);
   
   const additionalExperiences = [
     {
@@ -13,8 +12,7 @@ const Experience = () => {
       period: "Jan 2023 - Jun 2023",
       responsibilities: [
         "Mentored 70+ first-year CS students, optimizing academic planning and campus integration",
-        "Launched peer-led workshops and career sessions, increasing student retention by 30%",
-        "Facilitated connections between students and industry professionals through networking events"
+        "Launched peer-led workshops and career sessions, increasing student retention by 30%"
       ]
     },
     {
@@ -24,14 +22,21 @@ const Experience = () => {
       period: "Jan 2023 - Nov 2023",
       responsibilities: [
         "Architected high-performance REST APIs in Python with a WordPress headless CMS for XR safety features",
-        "Streamlined SQL queries and database indexing, reducing data retrieval time by 30% for 10K+ daily requests",
-        "Executed a pytest/Jenkins CI/CD pipeline achieving 90% test coverage & reducing bugs by 40% through tests"
+        "Streamlined SQL queries and database indexing, reducing data retrieval time by 30% for 10K+ daily requests"
       ],
       isRight: true
     }
   ];
   
-  const allExperiences = [...experiences, ...additionalExperiences];
+  // Limit experiences to 2 bullet points each
+  const experiencesWithLimitedBullets = experiences.map(exp => ({
+    ...exp,
+    responsibilities: exp.responsibilities.slice(0, 2)
+  }));
+  
+  const displayedExperiences = showAllExperiences ? 
+    [...experiencesWithLimitedBullets, ...additionalExperiences] : 
+    experiencesWithLimitedBullets;
   
   return (
     <section id="experience" className="py-20 beige-section-alt fade-in">
@@ -45,24 +50,14 @@ const Experience = () => {
           
           {/* Timeline items */}
           <div className="space-y-16">
-            {experiences.map((exp) => (
+            {displayedExperiences.map((exp) => (
               <div key={exp.id} className="relative flex flex-col md:flex-row items-center md:justify-center">
                 <div className={`flex md:flex-col items-center ${exp.isRight ? 'md:order-2 md:items-start md:w-1/2 md:pl-12' : 'md:items-end md:w-1/2 md:pr-12'} mb-4 md:mb-0`}>
                   <div className="w-14 h-14 flex-shrink-0 rounded-full bg-primary text-primary-foreground flex items-center justify-center z-10 mr-4 md:mr-0 md:mb-3 shadow-md">
-                    {exp.id === 1 ? (
-                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
-                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                      </svg>
-                    ) : exp.id === 2 ? (
-                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" />
-                      </svg>
-                    ) : (
-                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                      </svg>
-                    )}
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
+                      <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                    </svg>
                   </div>
                   <div className={exp.isRight ? 'md:text-left' : 'md:text-right'}>
                     <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 font-serif">{exp.company}</h3>
@@ -78,11 +73,11 @@ const Experience = () => {
                         {exp.responsibilities.map((item, index) => (
                           <li key={index} className={`flex ${exp.isRight ? 'md:flex-row-reverse' : ''}`}>
                             {exp.isRight ? (
-                              <svg className="w-4 h-4 text-primary ml-2 mt-1 hidden md:block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="w-4 h-4 text-primary ml-2 mt-1 hidden md:block flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clipRule="evenodd" />
                               </svg>
                             ) : (
-                              <svg className="w-4 h-4 text-primary mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
                               </svg>
                             )}
@@ -100,106 +95,25 @@ const Experience = () => {
         
         <div className="mt-16 text-center">
           <button 
-            onClick={() => setIsModalOpen(true)}
+            onClick={() => setShowAllExperiences(!showAllExperiences)} 
             className="px-6 py-3 beige-button-outlined inline-flex items-center group"
           >
-            <span>View Complete Work History</span>
+            <span>{showAllExperiences ? "Show Less" : "View Complete Work History"}</span>
             <svg 
-              className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+              className={`ml-2 w-4 h-4 transition-transform duration-300 ${showAllExperiences ? "rotate-180" : ""}`}
               fill="currentColor" 
               viewBox="0 0 20 20" 
               xmlns="http://www.w3.org/2000/svg"
             >
               <path 
                 fillRule="evenodd" 
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
                 clipRule="evenodd"
               />
             </svg>
           </button>
         </div>
       </div>
-      
-      {/* Complete Work History Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 fade-in">
-          <div className="bg-background dark:bg-background w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-lg shadow-xl p-6">
-            <div className="flex justify-between items-center mb-6">
-              <h3 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 font-serif">Complete Work History</h3>
-              <button 
-                onClick={() => setIsModalOpen(false)}
-                className="p-2 rounded-full hover:bg-secondary/50 transition-colors"
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path 
-                    fillRule="evenodd" 
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" 
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-            </div>
-            
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-0 md:left-1/2 h-full w-0.5 bg-primary/20 dark:bg-primary/20 transform md:translateX(-0.5px)"></div>
-              
-              {/* Timeline items */}
-              <div className="space-y-16">
-                {allExperiences.map((exp) => (
-                  <div key={exp.id} className="relative flex flex-col md:flex-row items-center md:justify-center">
-                    <div className={`flex md:flex-col items-center ${exp.isRight ? 'md:order-2 md:items-start md:w-1/2 md:pl-12' : 'md:items-end md:w-1/2 md:pr-12'} mb-4 md:mb-0`}>
-                      <div className="w-14 h-14 flex-shrink-0 rounded-full bg-primary text-primary-foreground flex items-center justify-center z-10 mr-4 md:mr-0 md:mb-3 shadow-md">
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                          <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
-                          <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                        </svg>
-                      </div>
-                      <div className={exp.isRight ? 'md:text-left' : 'md:text-right'}>
-                        <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 font-serif">{exp.company}</h3>
-                        <p className="text-primary dark:text-primary font-medium">{exp.position}</p>
-                        <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">{exp.period}</p>
-                      </div>
-                    </div>
-                    <div className={`${exp.isRight ? 'md:order-1 md:w-1/2 md:pr-12 md:text-right' : 'md:w-1/2 md:pl-12'} pl-16 ${exp.isRight ? 'md:pl-0' : ''}`}>
-                      <div className="beige-card p-5 backdrop-blur-sm relative overflow-hidden">
-                        <div className="absolute inset-0 bg-primary/5 dark:bg-primary/5 opacity-50"></div>
-                        <div className="relative z-10">
-                          <ul className="text-neutral-700 dark:text-neutral-300 text-sm space-y-3">
-                            {exp.responsibilities.map((item, index) => (
-                              <li key={index} className={`flex ${exp.isRight ? 'md:flex-row-reverse' : ''}`}>
-                                {exp.isRight ? (
-                                  <svg className="w-4 h-4 text-primary ml-2 mt-1 hidden md:block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clipRule="evenodd" />
-                                  </svg>
-                                ) : (
-                                  <svg className="w-4 h-4 text-primary mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
-                                  </svg>
-                                )}
-                                <span className="leading-relaxed">{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="mt-8 text-center">
-              <button 
-                onClick={() => setIsModalOpen(false)}
-                className="px-6 py-3 beige-button inline-flex items-center"
-              >
-                <span>Close</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
