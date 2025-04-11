@@ -164,7 +164,8 @@ export const experiences: Experience[] = [
       "Founded incident reporting app using Django and AWS, integrating AI agents with RAG to cut response times by 30%",
       "Engineered LangChain-based verification agents that cut false positives by 73%",
       "Designed scalable DynamoDB/EC2/S3 backend handling 200+ concurrent users with sub-200ms response times"
-    ]
+    ],
+    isRight: true
   },
   {
     id: 5,
