@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Background circle with gradient -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)" />
+  
+  <!-- Border -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#4f46e5" stroke-width="2" />
+  
+  <!-- Electricity bursts -->
+  <g opacity="0.7">
+    <path d="M50,10 L55,23 L45,25 L54,38 L42,40 L57,55 L37,57 L55,75 L25,70 L65,90" 
+          stroke="#0ea5e9" 
+          stroke-width="2" 
+          fill="none" 
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+    <path d="M50,10 L45,23 L55,25 L46,38 L58,40 L43,55 L63,57 L45,75 L75,70 L35,90" 
+          stroke="#ec4899" 
+          stroke-width="2" 
+          fill="none" 
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+  </g>
+  
+  <!-- Main lightning bolt -->
+  <path d="M50,15 L45,40 L55,42 L40,75 L46,50 L37,48 L50,15" 
+        fill="#ec4899" 
+        opacity="0.9" />
+  
+  <!-- S Letter with electric effect -->
+  <text x="31" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#ffffff" filter="url(#glow)">S</text>
+  
+  <!-- L Letter with electric effect -->
+  <text x="51" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#ffffff" filter="url(#glow)">L</text>
+  
+  <!-- Small sparkles -->
+  <circle cx="30" cy="35" r="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="70" cy="35" r="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="45" cy="70" r="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="60" cy="70" r="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="2.3s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Gradients and filters -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0c14;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10121e;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feFlood flood-color="#4f46e5" result="glow-color" />
+      <feComposite in="glow-color" in2="blur" operator="in" result="glow-blur" />
+      <feComposite in="SourceGraphic" in2="glow-blur" operator="over" />
+    </filter>
+  </defs>
+</svg>

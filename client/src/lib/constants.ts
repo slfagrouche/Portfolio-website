@@ -11,11 +11,11 @@ export const personalInfo = {
   
   // Personal details
   languages: ["English", "Arabic", "Darija", "Berber", "French (Beginner)"],
-  hobbies: ["Soccer", "Chess", "Hiking", "Cooking (Moroccan & Japanese cuisine)", "Travel", "Food Exploration"],
+  hobbies: ["Soccer", "Chess", "Hiking", "Cooking (Moroccan & Japanese cuisine)"],
   leadership: [
     "Peer Mentor, CUNY Brooklyn College CS Department",
     "Vice President, Brooklyn College Computer Science Club",
-    "ANmerc Needs You Ambassador"
+    "America Needs You Ambassador"
   ],
   studyAbroad: ["Morocco", "Japan"]
 };
@@ -321,7 +321,7 @@ export const blogPosts: BlogPost[] = [
     date: "April 2, 2025",
     readTime: "5 min read",
     category: "AI",
-    imageUrl: "https://images.unsplash.com/photo-1677442135046-2d073f3429a4?q=80&w=500&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&auto=format&fit=crop&q=80",
     slug: "future-of-ai-in-software-development"
   },
   {
@@ -331,7 +331,7 @@ export const blogPosts: BlogPost[] = [
     date: "March 15, 2025",
     readTime: "8 min read",
     category: "Web Development",
-    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=500&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=80",
     slug: "building-scalable-applications-react-nodejs"
   },
   {
@@ -341,7 +341,7 @@ export const blogPosts: BlogPost[] = [
     date: "February 23, 2025",
     readTime: "6 min read",
     category: "Cloud",
-    imageUrl: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=500&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=500&auto=format&fit=crop&q=80",
     slug: "optimizing-cloud-costs-startups"
   },
   {
@@ -351,7 +351,7 @@ export const blogPosts: BlogPost[] = [
     date: "January 18, 2025",
     readTime: "7 min read",
     category: "AI",
-    imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=500&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=500&auto=format&fit=crop&q=80",
     slug: "getting-started-with-langchain-rag"
   },
   {
@@ -361,7 +361,7 @@ export const blogPosts: BlogPost[] = [
     date: "December 5, 2024",
     readTime: "9 min read",
     category: "Web Development",
-    imageUrl: "https://images.unsplash.com/photo-1584986943889-a4e72c1f787f?q=80&w=500&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&auto=format&fit=crop&q=80",
     slug: "best-practices-secure-api-design"
   }
 ];
@@ -371,10 +371,16 @@ export const aboutDetails = {
     degree: "BSc. in Computer Science, Minor in Data Science",
     school: "Brooklyn College (2021 - Present)"
   },
-  certifications: {
-    title: "Cornell University ML Foundations",
-    others: "AI4ALL Certificate, CodePath Certificate"
-  },
+  certifications: [
+    { name: "Cornell University ML Foundations", issuer: "Cornell University", date: "Aug 2023" },
+    { name: "AI4ALL AI Development & Career Readiness Certificate", issuer: "AI4ALL", date: "Mar 2025" },
+    { name: "Certificate of Completion - CUNY Tech Prep (Data Science)", issuer: "CUNY Tech Prep", date: "Jun 2024" },
+    { name: "LangChain Chat with Your Data", issuer: "DeepLearning.AI", date: "Feb 2024" },
+    { name: "Finetuning Large Language Models", issuer: "DeepLearning.AI", date: "Mar 2024" },
+    { name: "Large Language Model Operations (LLMOps)", issuer: "DeepLearning.AI", date: "Apr 2024" },
+    { name: "ChatGPT Prompt Engineering for Developers", issuer: "DeepLearning.AI", date: "Jan 2024" },
+    { name: "Intermediate Technical Interview Prep", issuer: "CodePath", date: "May 2024" }
+  ],
   currentPosition: {
     title: "Lead AI Engineer",
     company: "City Tech, CUNY",

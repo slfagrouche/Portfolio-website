@@ -2,44 +2,20 @@ import { useState, useEffect } from "react";
 import { useTheme } from "@/hooks/use-theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MenuLinkProps } from "@/types";
+import electricLogo from "@/assets/logo.svg";
 
-// Modern Logo Component
+// Modern Logo Component with Electric Theme
 const Logo = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
   return (
     <div className="flex items-center">
-      <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="25" cy="25" r="23" fill={isDark ? "#1a1a1a" : "#fff"} stroke={isDark ? "#d2c0a6" : "#d2c0a6"} strokeWidth="2" />
-        <path 
-          d="M15 25C15 19.5 19.5 15 25 15C30.5 15 35 19.5 35 25" 
-          stroke={isDark ? "#d2c0a6" : "#9c8c71"} 
-          strokeWidth="3" 
-          strokeLinecap="round"
-        />
-        <path 
-          d="M35 25C35 30.5 30.5 35 25 35C19.5 35 15 30.5 15 25" 
-          stroke={isDark ? "#d2c0a6" : "#9c8c71"} 
-          strokeWidth="3" 
-          strokeLinecap="round" 
-          strokeDasharray="1 3"
-        />
-        <path 
-          d="M23 20L17 25L23 30" 
-          stroke={isDark ? "#d2c0a6" : "#9c8c71"} 
-          strokeWidth="2.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-        <path 
-          d="M27 20L33 25L27 30" 
-          stroke={isDark ? "#d2c0a6" : "#9c8c71"} 
-          strokeWidth="2.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-      </svg>
+      <img 
+        src={electricLogo} 
+        alt="SL Logo" 
+        className="w-10 h-10 object-contain" 
+      />
       <span className="ml-2 text-lg font-semibold text-neutral-800 dark:text-neutral-100 font-serif">Said Lfagrouche</span>
     </div>
   );
