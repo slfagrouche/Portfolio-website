@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { useTheme } from "@/hooks/use-theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MenuLinkProps } from "@/types";
-import electricLogo from "@/assets/logo.svg";
+import diamondLogo from "@/assets/diamond-logo.svg";
 
-// Modern Logo Component with Electric Theme
+// Modern Logo Component with Diamond Theme
 const Logo = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
@@ -12,9 +12,9 @@ const Logo = () => {
   return (
     <div className="flex items-center">
       <img 
-        src={electricLogo} 
-        alt="SL Logo" 
-        className="w-10 h-10 object-contain" 
+        src={diamondLogo} 
+        alt="Said Logo" 
+        className="w-12 h-12 object-contain" 
       />
       <span className="ml-2 text-lg font-semibold text-neutral-800 dark:text-neutral-100 font-serif">Said Lfagrouche</span>
     </div>

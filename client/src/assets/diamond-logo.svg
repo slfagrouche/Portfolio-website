@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="120" viewBox="0 0 220 120">
+  <!-- Diamond shape with theme-aware colors -->
+  <path d="M110,5 L205,60 L110,115 L15,60 L110,5 Z" fill="#4f46e5" stroke="#ffffff" stroke-width="2" />
+  
+  <!-- Text in the center -->
+  <text x="110" y="70" font-family="Georgia, serif" font-size="32" font-weight="400" fill="#ffffff" text-anchor="middle">Said</text>
+</svg>
