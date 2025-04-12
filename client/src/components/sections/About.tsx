@@ -141,12 +141,12 @@ const About = () => {
                     <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z" clipRule="evenodd"></path>
                     </svg>
-                    <h3 className="font-semibold text-primary dark:text-primary mb-0">Personal Details</h3>
+                    <h3 className="font-semibold text-primary dark:text-primary mb-0">Interests/Me</h3>
                   </div>
                   
                   <div className="max-h-48 overflow-y-auto pr-2">
                     <div className="mb-4">
-                      <h4 className="text-sm font-medium text-neutral-800 dark:text-neutral-200 mb-2">Languages</h4>
+                      <h4 className="text-sm font-medium text-neutral-800 dark:text-neutral-200 mb-2">Fun fact, I speak: </h4>
                       <div className="grid grid-cols-2 gap-2">
                         {personalInfo.languages?.map((language, index) => (
                           <div key={index} className="flex items-center">
@@ -168,20 +168,6 @@ const About = () => {
                               <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path>
                             </svg>
                             <span className="text-neutral-700 dark:text-neutral-300 text-sm">{hobby}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    <div className="mt-4">
-                      <h4 className="text-sm font-medium text-neutral-800 dark:text-neutral-200 mb-2">Study Abroad</h4>
-                      <div className="grid grid-cols-2 gap-2">
-                        {personalInfo.studyAbroad?.map((country, index) => (
-                          <div key={index} className="flex items-center">
-                            <svg className="w-4 h-4 text-primary mr-1.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                            </svg>
-                            <span className="text-neutral-700 dark:text-neutral-300 text-sm">{country}</span>
                           </div>
                         ))}
                       </div>

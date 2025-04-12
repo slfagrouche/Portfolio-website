@@ -75,11 +75,11 @@ const Skills = () => {
                   <div className="w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary flex items-center justify-center mr-4 shadow-sm">
                     <FontAwesomeIcon icon={["fas", "code"]} />
                   </div>
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 font-serif">Web Development</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 font-serif">Data & AI</h3>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-3 text-sm">
-                  {skillTags["Web Development"].map((tag, index) => (
+                  {skillTags["Data_AI"].map((tag, index) => (
                     <div key={index} className="flex items-center bg-secondary/50 dark:bg-secondary/40 px-3 py-2.5 rounded-md border border-border">
                       <span className="w-2 h-2 bg-primary rounded-full mr-2.5"></span>
                       <span className="text-neutral-800 dark:text-neutral-200">{tag.name}</span>

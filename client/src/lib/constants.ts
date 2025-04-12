@@ -43,7 +43,7 @@ export const projects: Project[] = [
     technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
     projectUrl: "https://github.com/slfagrouche/Betterchef-AI-Powered-Cooking-App",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
     duration: "3 months"
   },
   {
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     technologies: ["Python", "LangChain", "MongoDB", "React"],
     projectUrl: "https://github.com/slfagrouche/TravelAICompanion",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
     duration: "2 months"
   },
   {
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     technologies: ["Python", "AWS", "FastAPI", "LangChain", "React"],
     projectUrl: "https://github.com/slfagrouche/SafeGuard",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
     duration: "4 months"
   },
   {
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     technologies: ["Python", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Seaborn"],
     projectUrl: "https://github.com/slfagrouche/Real-Estate-Market-Analysis",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
     duration: "3 months"
   },
   {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     technologies: ["Python", "LangChain", "Flask", "FAISS", "Google Cloud API"],
     projectUrl: "https://github.com/slfagrouche/TUTOR",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
     duration: "3.5 months"
   },
   {
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     technologies: ["Python", "Gradio", "Hugging Face", "TheMealDB API", "YouTube API"],
     projectUrl: "https://github.com/slfagrouche/KitchenTeacher",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
     duration: "2 months"
   },
   {
@@ -115,7 +115,7 @@ export const projects: Project[] = [
     technologies: ["Python", "OpenCV", "TensorFlow", "Scikit-learn", "SVMs", "CNNs"],
     projectUrl: "https://github.com/slfagrouche/AI4ALL-Ignite24-Group2-FacialRecognition",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
     duration: "2 months"
   },
   {
@@ -240,8 +240,9 @@ export const skillCategories: SkillCategory[] = [
     icon: "code",
     skills: [
       { name: "Python", level: "Expert", percentage: 95 },
-      { name: "Java", level: "Advanced", percentage: 85 },
+      { name: "Java", level: "Expert", percentage: 90 },
       { name: "C++", level: "Intermediate", percentage: 75 },
+      { name: "HTML/CSS, JavaScript", level: "Intermediate", percentage: 85 },
       { name: "SQL", level: "Advanced", percentage: 85 },
       { name: "Git", level: "Advanced", percentage: 80 }
     ]
@@ -263,11 +264,13 @@ export const skillCategories: SkillCategory[] = [
     title: "Frameworks & Cloud",
     icon: "server",
     skills: [
-      { name: "React", level: "Advanced", percentage: 80 },
-      { name: "Node.js", level: "Advanced", percentage: 85 },
+      { name: "FastAPI/Flask", level: "Advanced", percentage: 80 },
+      { name: "Django", level: "Advanced", percentage: 85 },
       { name: "AWS", level: "Advanced", percentage: 85 },
-      { name: "Docker", level: "Intermediate", percentage: 75 },
-      { name: "MongoDB", level: "Advanced", percentage: 80 }
+      { name: "GCP", level: "Intermediate", percentage: 75 },
+      { name: "Docker", level: "Advanced", percentage: 75 },
+      { name: "MongoDB", level: "Advanced", percentage: 80 },
+      
     ]
   }
 ];
@@ -281,22 +284,13 @@ export const skillTags: { [key: string]: SkillTag[] } = {
     { name: "CI/CD", icon: "server" },
     { name: "Linux", icon: "terminal" }
   ],
-  "Data & AI": [
-    { name: "Pandas", icon: "python" },
-    { name: "NumPy", icon: "calculator" },
-    { name: "OpenCV", icon: "image" },
-    { name: "TensorFlow", icon: "robot" },
-    { name: "PyTorch", icon: "robot" },
+  "Tools": [
+    { name: "Postman", icon: "python" },
+    { name: "Jenkins", icon: "calculator" },
+    { name: "Milvus", icon: "image" },
+    { name: "Pulumi", icon: "robot" },
     { name: "RAG", icon: "search" }
   ],
-  "Web Development": [
-    { name: "React", icon: "code" },
-    { name: "Node.js", icon: "server" },
-    { name: "Flask", icon: "python" },
-    { name: "Django", icon: "python" },
-    { name: "FastAPI", icon: "code" },
-    { name: "RESTful APIs", icon: "send" }
-  ]
 };
 
 export const projectCategories = ["All", "AI/ML", "Web Development", "Cloud", "Game Development"];
