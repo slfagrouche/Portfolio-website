@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact" className="py-20 beige-section-alt fade-in">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
-          <h2 className="section-title text-center">How Can We Help You?</h2>
+          <h2 className="section-title text-center">Get in Touch</h2>
           <p className="section-subtitle mb-12">I'm here to answer your questions and discuss opportunities</p>
           
           <div className="flex flex-col md:flex-row items-center">
@@ -13,10 +13,11 @@ const Contact = () => {
               <div className="pr-0 md:pr-8">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1595062584313-47018e0341af?q=80&w=600&auto=format&fit=crop" 
-                    alt="Contact illustration" 
-                    className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+                    src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=600&auto=format&fit=crop" 
+                    alt="Contact me" 
+                    className="w-full max-w-xs mx-auto rounded-lg shadow-lg object-cover h-80"
                   />
+                  <div className="absolute top-0 left-0 w-full h-full bg-primary/10 rounded-lg"></div>
                   <div className="absolute -top-4 -right-4 bg-white dark:bg-neutral-800 rounded-full p-4 shadow-md">
                     <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>

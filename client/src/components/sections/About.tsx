@@ -77,7 +77,7 @@ const About = () => {
                     <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" d="M7 2a1 1 0 011 1v1h3a1 1 0 110 2H9.20l.4 2H12a1 1 0 110 2H9.92l.4 2H12a1 1 0 110 2H10.6l.4 2H16a1 1 0 110 2h-5.4l.4 2H15a1 1 0 110 2h-4.4a1 1 0 01-.98-.8l-.5-2.5a1 1 0 01.9-1.2H12a1 1 0 01-.9-1.2l-.5-2.5a1 1 0 01.9-1.2H12a1 1 0 01-.9-1.2l-.5-2.5a1 1 0 01.9-1.2H12A1 1 0 0111 5H8a1 1 0 110-2h3V2a1 1 0 011-1z" clipRule="evenodd"></path>
                     </svg>
-                    <h3 className="font-semibold text-primary dark:text-primary mb-0">Languages</h3>
+                    <h3 className="font-semibold text-primary dark:text-primary mb-0">Fun Fact: I speak</h3>
                   </div>
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     {personalInfo.languages?.map((language, index) => (
@@ -108,11 +108,34 @@ const About = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="mt-3 pt-3 border-t border-border">
-                    <p className="text-neutral-700 dark:text-neutral-300 text-sm">
-                      <span className="font-medium">Fun fact:</span> I love both Japanese ramen and Moroccan couscous!
-                    </p>
+                </div>
+                
+                <div className="p-5 beige-card bg-primary/5 dark:bg-primary/10">
+                  <div className="flex items-center mb-3">
+                    <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z" clipRule="evenodd"></path>
+                    </svg>
+                    <h3 className="font-semibold text-primary dark:text-primary mb-0">Fun Facts</h3>
                   </div>
+                  <ul className="text-neutral-700 dark:text-neutral-300 text-sm space-y-2 mt-2">
+                    {personalInfo.funFacts?.map((fact, index) => (
+                      <li key={index} className="flex items-start">
+                        <svg 
+                          className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" 
+                          fill="currentColor" 
+                          viewBox="0 0 20 20" 
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path 
+                            fillRule="evenodd" 
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" 
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span>{fact}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 
                 <div className="p-5 beige-card bg-primary/5 dark:bg-primary/10">

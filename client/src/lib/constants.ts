@@ -11,8 +11,8 @@ export const personalInfo = {
   
   // Personal details
   languages: ["English", "Arabic", "Darija", "Berber", "French (Beginner)"],
-  hobbies: ["Soccer", "Hiking", "Cooking", "Travel"],
-  funFacts: ["Studied abroad in Morocco and Japan", "Speaks 4 languages", "Loves ramen and Moroccan couscous"],
+  hobbies: ["Soccer", "Chess", "Hiking", "Cooking", "Travel"],
+  funFacts: ["Studied abroad in Morocco and Japan", "Speaks 4 languages", "Loves ramen, Quesabirria, and Moroccan couscous"],
 };
 
 export type Project = {
@@ -25,6 +25,7 @@ export type Project = {
   projectUrl: string;
   demoVideo?: string;
   hasInteractiveDemo?: boolean;
+  duration: string;
 };
 
 export const projects: Project[] = [
@@ -33,11 +34,12 @@ export const projects: Project[] = [
     title: "BetterChef",
     category: "AI/ML",
     description: "AI-powered cooking assistant providing personalized recipes, meal planning, and real-time cooking guidance.",
-    imageUrl: "https://images.unsplash.com/photo-1555596898-fc3757ea5351?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1556911073-a517e752729c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
     projectUrl: "#",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    duration: "3 months"
   },
   {
     id: 2,
@@ -48,7 +50,8 @@ export const projects: Project[] = [
     technologies: ["Python", "LangChain", "MongoDB", "React"],
     projectUrl: "#",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    duration: "2 months"
   },
   {
     id: 3,
@@ -59,7 +62,8 @@ export const projects: Project[] = [
     technologies: ["Python", "AWS", "FastAPI", "LangChain", "React"],
     projectUrl: "https://github.com/slfagrouche/SafeGuard",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    duration: "4 months"
   },
   {
     id: 4,
@@ -70,7 +74,8 @@ export const projects: Project[] = [
     technologies: ["JavaScript", "React", "OpenAI", "Node.js", "MongoDB"],
     projectUrl: "https://github.com/slfagrouche/AI-Powered-Mock-Interview",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    duration: "2.5 months"
   },
   {
     id: 5,
@@ -80,38 +85,45 @@ export const projects: Project[] = [
     imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Seaborn"],
     projectUrl: "https://github.com/slfagrouche/Real-Estate-Market-Analysis",
-    hasInteractiveDemo: false
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    duration: "3 months"
   },
   {
     id: 6,
     title: "TUTOR - AI Educational Assistant",
     category: "AI/ML",
     description: "An AI-powered educational assistant for audio transcription, PDF text extraction, and context-aware Q&A using LangChain and RAG architecture.",
-    imageUrl: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "LangChain", "Flask", "FAISS", "Google Cloud API"],
     projectUrl: "https://github.com/slfagrouche/TUTOR",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    duration: "3.5 months"
   },
   {
     id: 7,
     title: "KitchenTeacher",
     category: "Web Development",
     description: "Interactive web application that predicts dishes from food images, provides YouTube recipe videos, and fetches detailed recipe instructions.",
-    imageUrl: "https://images.unsplash.com/photo-1556911220-bda9f33a8b25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "Gradio", "Hugging Face", "TheMealDB API", "YouTube API"],
     projectUrl: "https://github.com/slfagrouche/KitchenTeacher",
-    hasInteractiveDemo: false
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    duration: "2 months"
   },
   {
     id: 8,
     title: "Facial Emotion Recognition",
     category: "AI/ML",
     description: "A facial recognition system developed for the AI4ALL fellowship program that classifies 7 emotions with 92% accuracy across 35,000+ images.",
-    imageUrl: "https://images.unsplash.com/photo-1523450001304-caac55e84396?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "OpenCV", "TensorFlow", "Scikit-learn", "SVMs", "CNNs"],
     projectUrl: "https://github.com/slfagrouche/AI4ALL-Ignite24-Group2-FacialRecognition",
-    hasInteractiveDemo: false
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    duration: "2 months"
   }
 ];
 
@@ -134,7 +146,8 @@ export const experiences: Experience[] = [
       "Engineered AI-driven web scraping with Firecrawler to extract educational resources, boosting data accuracy by 25%",
       "Mentored team members and deployed AI NLP chatbots using LangChain, MongoDB, and AWS SageMaker",
       "Increased support engagement by 40% while achieving 95% accuracy with AI implementation"
-    ]
+    ],
+    isRight: false
   },
   {
     id: 2,
@@ -182,7 +195,7 @@ export const experiences: Experience[] = [
       "Implemented solutions using Python and web infrastructure",
       "Focused on software construction and computer information systems"
     ],
-    isRight: true
+    isRight: false
   },
   {
     id: 6,
@@ -193,7 +206,8 @@ export const experiences: Experience[] = [
       "Developed PyTorch DNNs using NLP/BoW for Amazon rating prediction with 90% accuracy on 5.4GB data",
       "Executed large-scale NLP data processing enabling robust feature engineering",
       "Presented predictive capabilities highlighting business value in extracting patterns from user reviews"
-    ]
+    ],
+    isRight: true
   }
 ];
 
