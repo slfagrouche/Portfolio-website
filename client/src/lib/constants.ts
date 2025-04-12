@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description: "AI-powered cooking assistant providing personalized recipes, meal planning, and real-time cooking guidance.",
     imageUrl: "https://images.unsplash.com/photo-1556911073-a517e752729c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
-    projectUrl: "#",
+    projectUrl: "https://github.com/slfagrouche/Betterchef-AI-Powered-Cooking-App",
     hasInteractiveDemo: true,
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "3 months"
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     description: "AI-driven travel assistant that offers personalized itineraries and real-time language translation for international travelers.",
     imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "LangChain", "MongoDB", "React"],
-    projectUrl: "#",
+    projectUrl: "https://github.com/slfagrouche/TravelAICompanion",
     hasInteractiveDemo: true,
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "2 months"
@@ -72,18 +72,6 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "AI-Powered Mock Interview",
-    category: "Web Development",
-    description: "Interactive interview practice platform using AI to simulate real interviews and provide feedback for job seekers.",
-    imageUrl: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["JavaScript", "React", "OpenAI", "Node.js", "MongoDB"],
-    projectUrl: "https://github.com/slfagrouche/AI-Powered-Mock-Interview",
-    hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    duration: "2.5 months"
-  },
-  {
-    id: 5,
     title: "Real Estate Market Analysis",
     category: "AI/ML",
     description: "Analysis of 2.2 million Realtor.com listings using Python and machine learning to uncover U.S. real estate market patterns, identifying market segments and predicting property prices.",
@@ -95,7 +83,7 @@ export const projects: Project[] = [
     duration: "3 months"
   },
   {
-    id: 6,
+    id: 5,
     title: "TUTOR - AI Educational Assistant",
     category: "AI/ML",
     description: "An AI-powered educational assistant for audio transcription, PDF text extraction, and context-aware Q&A using LangChain and RAG architecture.",
@@ -107,7 +95,7 @@ export const projects: Project[] = [
     duration: "3.5 months"
   },
   {
-    id: 7,
+    id: 6,
     title: "KitchenTeacher",
     category: "Web Development",
     description: "Interactive web application that predicts dishes from food images, provides YouTube recipe videos, and fetches detailed recipe instructions.",
@@ -119,7 +107,7 @@ export const projects: Project[] = [
     duration: "2 months"
   },
   {
-    id: 8,
+    id: 7,
     title: "Facial Emotion Recognition",
     category: "AI/ML",
     description: "A facial recognition system developed for the AI4ALL fellowship program that classifies 7 emotions with 92% accuracy across 35,000+ images.",
@@ -129,6 +117,17 @@ export const projects: Project[] = [
     hasInteractiveDemo: true,
     demoVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "2 months"
+  },
+  {
+    id: 8,
+    title: "The Swinging Snake Game",
+    category: "Game Development",
+    description: "A classic Snake game reimagined using Java Swing where players control a growing snake that eats apples to increase their score, with increasing difficulty levels.",
+    imageUrl: "https://images.unsplash.com/photo-1605711285791-0219e80e43a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Java", "Swing", "Object-Oriented Programming"],
+    projectUrl: "https://github.com/slfagrouche/The-Swinging-Snake-Game",
+    hasInteractiveDemo: false,
+    duration: "2 weeks"
   }
 ];
 
@@ -300,7 +299,7 @@ export const skillTags: { [key: string]: SkillTag[] } = {
   ]
 };
 
-export const projectCategories = ["All", "AI/ML", "Web Development", "Cloud"];
+export const projectCategories = ["All", "AI/ML", "Web Development", "Cloud", "Game Development"];
 
 export type BlogPost = {
   id: number;
