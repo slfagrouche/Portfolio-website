@@ -189,3 +189,33 @@
     @apply bg-secondary/50 dark:bg-secondary/20;
   }
 }
+
+@layer utilities {
+  .animated-gradient-text {
+    @apply bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: gradient-animation 3s linear infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .text-wave span {
+    position: relative; /* Needed for translateY */
+    display: inline-block;
+    animation: wave-animation 1.5s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i)); /* Stagger animation */
+  }
+
+  @keyframes wave-animation {
+    0%, 40%, 100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-8px); /* Adjust bounce height */
+    }
+  }
+}

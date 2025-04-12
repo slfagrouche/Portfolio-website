@@ -196,9 +196,8 @@ export const experiences: Experience[] = [
     period: "Jun 2024 - Aug 2024",
     responsibilities: [
       "Worked with the CRM Data Cloud Solutions Team",
-      "Implemented solutions using Python and web infrastructure",
-      "Focused on software construction and computer information systems"
-    ],
+      "Implemented solutions using Java and Springboot to build a CRM application",
+      "Developed a RESTful API using Java and Springboot to handle CRM data"],
     isRight: false
   },
   {

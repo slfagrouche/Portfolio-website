@@ -29,11 +29,15 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:w-3/5 text-center md:text-left">
-            <span className="inline-block px-3 py-1 bg-primary/5 text-primary/80 dark:bg-primary/10 dark:text-primary/90 rounded-full text-sm font-medium mb-4 border border-primary/20">
-              Welcome to my portfolio
+            <span className="text-wave inline-block px-3 py-1 bg-primary/5 text-primary/80 dark:bg-primary/10 dark:text-primary/90 rounded-full text-sm font-medium mb-4 border border-primary/20">
+              {"Welcome to my portfolio".split("").map((char, index) => (
+                <span key={index} style={{ '--i': index } as React.CSSProperties}>
+                  {char === " " ? "\u00A0" : char} {/* Replace space with non-breaking space */}
+                </span>
+              ))}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-900 dark:text-neutral-100 font-serif">
-              I'm <span className="text-primary dark:text-primary">{personalInfo.name}</span>
+              I'm <span className="animated-gradient-text">{personalInfo.name}</span>
             </h1>
             <p className="text-xl md:text-2xl mb-6 text-neutral-700 dark:text-neutral-300 font-light">
               {personalInfo.title}

@@ -142,9 +142,11 @@ const Contact = () => {
                     <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
                       Ready to connect? Click below to open your email client:
                     </p>
-                    <a 
+                    <a
                       href={`mailto:${personalInfo.email}`}
                       className="inline-flex items-center justify-center w-full px-6 py-3.5 beige-button rounded-full shadow-sm hover:shadow-md transition-all duration-300 font-medium text-neutral-800"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
