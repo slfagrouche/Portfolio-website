@@ -11,8 +11,13 @@ export const personalInfo = {
   
   // Personal details
   languages: ["English", "Arabic", "Darija", "Berber", "French (Beginner)"],
-  hobbies: ["Soccer", "Chess", "Hiking", "Cooking", "Travel"],
-  funFacts: ["Studied abroad in Morocco and Japan", "Speaks 4 languages", "Loves ramen, Quesabirria, and Moroccan couscous"],
+  hobbies: ["Soccer", "Chess", "Hiking", "Cooking (Moroccan & Japanese cuisine)", "Travel", "Food Exploration"],
+  leadership: [
+    "Peer Mentor, CUNY Brooklyn College CS Department",
+    "Vice President, Brooklyn College Computer Science Club",
+    "ANmerc Needs You Ambassador"
+  ],
+  studyAbroad: ["Morocco", "Japan"]
 };
 
 export type Project = {
@@ -56,7 +61,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "SafeGuard",
-    category: "Cloud",
+    category: "Web Development",
     description: "Crisis monitoring platform for real-time incident tracking and alerts in humanitarian crisis areas using AI verification.",
     imageUrl: "https://images.unsplash.com/photo-1606765962248-7ff407b51667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Python", "AWS", "FastAPI", "LangChain", "React"],
@@ -68,7 +73,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "AI-Powered Mock Interview",
-    category: "AI/ML",
+    category: "Web Development",
     description: "Interactive interview practice platform using AI to simulate real interviews and provide feedback for job seekers.",
     imageUrl: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["JavaScript", "React", "OpenAI", "Node.js", "MongoDB"],
@@ -259,8 +264,8 @@ export const skillCategories: SkillCategory[] = [
     title: "Frameworks & Cloud",
     icon: "server",
     skills: [
-      { name: "Spring Boot", level: "Advanced", percentage: 85 },
-      { name: "Django", level: "Advanced", percentage: 80 },
+      { name: "React", level: "Advanced", percentage: 80 },
+      { name: "Node.js", level: "Advanced", percentage: 85 },
       { name: "AWS", level: "Advanced", percentage: 85 },
       { name: "Docker", level: "Intermediate", percentage: 75 },
       { name: "MongoDB", level: "Advanced", percentage: 80 }
@@ -273,25 +278,25 @@ export const skillTags: { [key: string]: SkillTag[] } = {
     { name: "AWS", icon: "aws" },
     { name: "GCP", icon: "cloud" },
     { name: "Docker", icon: "docker" },
-    { name: "Git", icon: "git" },
+    { name: "Kubernetes", icon: "server" },
     { name: "CI/CD", icon: "server" },
     { name: "Linux", icon: "terminal" }
   ],
   "Data & AI": [
-    { name: "MongoDB", icon: "database" },
-    { name: "Weaviate", icon: "database" },
-    { name: "RAG", icon: "search" },
-    { name: "Milvus", icon: "database" },
     { name: "Pandas", icon: "python" },
-    { name: "NumPy", icon: "calculator" }
+    { name: "NumPy", icon: "calculator" },
+    { name: "OpenCV", icon: "image" },
+    { name: "TensorFlow", icon: "robot" },
+    { name: "PyTorch", icon: "robot" },
+    { name: "RAG", icon: "search" }
   ],
   "Web Development": [
-    { name: "Spring Boot", icon: "java" },
-    { name: "Django", icon: "python" },
+    { name: "React", icon: "code" },
+    { name: "Node.js", icon: "server" },
     { name: "Flask", icon: "python" },
-    { name: "Postman", icon: "send" },
-    { name: "Swagger", icon: "file-text" },
-    { name: "Jenkins", icon: "settings" }
+    { name: "Django", icon: "python" },
+    { name: "FastAPI", icon: "code" },
+    { name: "RESTful APIs", icon: "send" }
   ]
 };
 
@@ -326,7 +331,7 @@ export const blogPosts: BlogPost[] = [
     date: "March 15, 2025",
     readTime: "8 min read",
     category: "Web Development",
-    imageUrl: "https://images.unsplash.com/photo-1546900703-cf06143d1239?q=80&w=500&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=500&auto=format&fit=crop",
     slug: "building-scalable-applications-react-nodejs"
   },
   {
@@ -336,8 +341,28 @@ export const blogPosts: BlogPost[] = [
     date: "February 23, 2025",
     readTime: "6 min read",
     category: "Cloud",
-    imageUrl: "https://images.unsplash.com/photo-1603695360804-28c7eb917f7a?q=80&w=500&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=500&auto=format&fit=crop",
     slug: "optimizing-cloud-costs-startups"
+  },
+  {
+    id: 4,
+    title: "Getting Started with LangChain for RAG Applications",
+    excerpt: "A developer's guide to implementing Retrieval Augmented Generation for production-level applications with LangChain.",
+    date: "January 18, 2025",
+    readTime: "7 min read",
+    category: "AI",
+    imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=500&auto=format&fit=crop",
+    slug: "getting-started-with-langchain-rag"
+  },
+  {
+    id: 5,
+    title: "Best Practices for Secure API Design",
+    excerpt: "Essential security patterns and practices every developer should follow when designing and implementing APIs.",
+    date: "December 5, 2024",
+    readTime: "9 min read",
+    category: "Web Development",
+    imageUrl: "https://images.unsplash.com/photo-1584986943889-a4e72c1f787f?q=80&w=500&auto=format&fit=crop",
+    slug: "best-practices-secure-api-design"
   }
 ];
 
