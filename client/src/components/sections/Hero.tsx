@@ -42,12 +42,19 @@ const Hero = () => {
               {personalInfo.bio}
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <a href="#contact" className="px-6 py-3 beige-button flex items-center space-x-2">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                <span>Contact Me</span>
+              <a href="#contact" className="relative inline-flex items-center px-8 py-4 overflow-hidden text-lg font-medium rounded-full bg-primary text-primary-foreground transition-all duration-300 ease-out hover:bg-primary/90 hover:shadow-md group">
+                <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                <span className="flex items-center gap-2 group-hover:translate-x-[-10px] transition-transform duration-300">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                  Get In Touch
+                </span>
               </a>
             </div>
             <SocialLinks links={socialLinks} className="mt-8 justify-center md:justify-start" />
