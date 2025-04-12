@@ -11,11 +11,11 @@ export const personalInfo = {
   
   // Personal details
   languages: ["English", "Arabic", "Darija", "Berber", "French (Beginner)"],
-  hobbies: ["Soccer", "Chess", "Hiking", "Cooking (Moroccan & Japanese cuisine)"],
+  hobbies: ["Soccer", "Chess", "Hiking", "Cooking (Moroccan & Japanese cuisine)", "Travel", "Food Exploration"],
   leadership: [
     "Peer Mentor, CUNY Brooklyn College CS Department",
     "Vice President, Brooklyn College Computer Science Club",
-    "America Needs You Ambassador"
+    "ANmerc Needs You Ambassador"
   ],
   studyAbroad: ["Morocco", "Japan"]
 };
@@ -197,7 +197,7 @@ export const experiences: Experience[] = [
     period: "Jun 2024 - Aug 2024",
     responsibilities: [
       "Worked with the CRM Data Cloud Solutions Team",
-      "Implemented solutions using Java and web infrastructure",
+      "Implemented solutions using Python and web infrastructure",
       "Focused on software construction and computer information systems"
     ],
     isRight: false
