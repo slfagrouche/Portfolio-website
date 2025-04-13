@@ -1,18 +1,10 @@
-{
+has issues{
   "version": 2,
-  "builds": [
-    {
-      "src": "client",
-      "use": "@vercel/static-build",
-      "config": {
-        "outputDirectory": "../dist/public"
-      }
-    }
-  ],
+  "outputDirectory": "dist/public",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/dist/public/$1"
+      "dest": "/$1"
     }
   ]
 }
