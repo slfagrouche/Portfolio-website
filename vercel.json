@@ -2,9 +2,10 @@
   "version": 2,
   "builds": [
     {
-      "src": "client",
+      "src": "client/package.json",
       "use": "@vercel/static-build",
       "config": {
+        "buildCommand": "npm run build",
         "outputDirectory": "dist/public"
       }
     }
@@ -12,7 +13,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/public/$1"
+      "dest": "/dist/public/$1"
     }
   ]
 }
