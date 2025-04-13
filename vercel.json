@@ -1,3 +1,10 @@
 {
-  "version": 2
+  "version": 2,
+  "outputDirectory": "dist/public",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
 }
