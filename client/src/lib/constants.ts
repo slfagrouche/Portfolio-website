@@ -23,12 +23,13 @@ export const personalInfo = {
 export type Project = {
   id: number;
   title: string;
-  category: string;
+  category: string | string[];
   description: string;
   imageUrl: string;
   technologies: string[];
   projectUrl: string;
   demoVideo?: string;
+  demoEmbed?: string;
   hasInteractiveDemo?: boolean;
   duration: string;
 };
@@ -36,97 +37,125 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "BetterChef",
-    category: "AI/ML",
-    description: "AI-powered cooking assistant providing personalized recipes, meal planning, and real-time cooking guidance.",
-    imageUrl: "https://images.unsplash.com/photo-1556911073-a517e752729c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
-    projectUrl: "https://github.com/slfagrouche/Betterchef-AI-Powered-Cooking-App",
+    title: "TheraGuide AI",
+    category: ["AI/ML", "Web Development"],
+    description: "AI system helping mental-health professionals craft real-time, context-aware replies during patient sessions with crisis detection and RAG-powered suggestions.",
+    imageUrl: "https://images.unsplash.com/photo-1566807810030-3eaa60f3e670?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "FastAPI", "OpenAI", "ChromaDB", "LangChain", "React"],
+    projectUrl: "https://github.com/slfagrouche/TheraGuide-AI",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
+    demoVideo: "https://www.loom.com/share/e5017c328bdd4461a55cee15f6c10eff?sid=510db1eb-08d1-4e91-b3b6-388d3eaa5b68",
+    demoEmbed: '<div style="position: relative; padding-bottom: 54.37499999999999%; height: 0;"><iframe src="https://www.loom.com/embed/e5017c328bdd4461a55cee15f6c10eff?sid=7fcb722e-8a40-489d-a803-851186b7fecb" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>',
     duration: "3 months"
   },
   {
     id: 2,
-    title: "TravelAI Companion",
-    category: "AI/ML",
-    description: "AI-driven travel assistant that offers personalized itineraries and real-time language translation for international travelers.",
-    imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "LangChain", "MongoDB", "React"],
-    projectUrl: "https://github.com/slfagrouche/TravelAICompanion",
+    title: "AI Podcast Producer",
+    category: ["Cloud", "AI/ML"],
+    description: "Cutting-edge application that automatically transforms news articles into engaging conversational podcasts with realistic host and co-host dynamics.",
+    imageUrl: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "FastAPI", "React", "TypeScript", "OpenAI", "ElevenLabs", "Supabase"],
+    projectUrl: "https://github.com/slfagrouche/AI-Podcast-Producer",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
+    demoVideo: "https://www.loom.com/share/52c9078c2554408e8c401ac481cb2e36?sid=954829e8-3904-4656-9c2e-4d18a1aa570e",
+    demoEmbed: '<div style="position: relative; padding-bottom: 54.37499999999999%; height: 0;"><iframe src="https://www.loom.com/embed/52c9078c2554408e8c401ac481cb2e36?sid=23867105-15fd-4ab5-b7e8-d98b12b4cfa7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>',
     duration: "2 months"
   },
   {
     id: 3,
-    title: "SafeGuard",
-    category: "Web Development",
-    description: "Crisis monitoring platform for real-time incident tracking and alerts in humanitarian crisis areas using AI verification.",
-    imageUrl: "https://images.unsplash.com/photo-1606765962248-7ff407b51667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "AWS", "FastAPI", "LangChain", "React"],
-    projectUrl: "https://github.com/slfagrouche/SafeGuard",
+    title: "BetterChef",
+    category: ["AI/ML", "Web Development"],
+    description: "AI-powered cooking assistant providing personalized recipes, meal planning, and real-time cooking guidance.",
+    imageUrl: "https://images.unsplash.com/photo-1556911073-a517e752729c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
+    projectUrl: "https://github.com/slfagrouche/Betterchef-AI-Powered-Cooking-App",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
-    duration: "4 months"
-  },
-  {
-    id: 4,
-    title: "Real Estate Market Analysis",
-    category: "AI/ML",
-    description: "Analysis of 2.2 million Realtor.com listings using Python and machine learning to uncover U.S. real estate market patterns, identifying market segments and predicting property prices.",
-    imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Seaborn"],
-    projectUrl: "https://github.com/slfagrouche/Real-Estate-Market-Analysis",
-    hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
     duration: "3 months"
   },
   {
-    id: 5,
-    title: "TUTOR - AI Educational Assistant",
-    category: "AI/ML",
-    description: "An AI-powered educational assistant for audio transcription, PDF text extraction, and context-aware Q&A using LangChain and RAG architecture.",
-    imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "LangChain", "Flask", "FAISS", "Google Cloud API"],
-    projectUrl: "https://github.com/slfagrouche/TUTOR",
+    id: 4,
+    title: "TravelAI Companion",
+    category: ["Cloud", "AI/ML"],
+    description: "AI-driven travel assistant that offers personalized itineraries and real-time language translation for international travelers.",
+    imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "LangChain", "MongoDB", "React"],
+    projectUrl: "https://github.com/slfagrouche/TravelAICompanion",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
-    duration: "3.5 months"
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "2 months"
+  },
+  {
+    id: 5,
+    title: "SafeGuard",
+    category: ["Cloud", "Web Development"],
+    description: "Crisis monitoring platform for real-time incident tracking and alerts in humanitarian crisis areas using AI verification.",
+    imageUrl: "https://images.unsplash.com/photo-1606765962248-7ff407b51667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "AWS", "FastAPI", "LangChain", "React"],
+    projectUrl: "https://github.com/slfagrouche/SafeGuard",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "4 months"
   },
   {
     id: 6,
-    title: "KitchenTeacher",
-    category: "Web Development",
-    description: "Interactive web application that predicts dishes from food images, provides YouTube recipe videos, and fetches detailed recipe instructions.",
-    imageUrl: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "Gradio", "Hugging Face", "TheMealDB API", "YouTube API"],
-    projectUrl: "https://github.com/slfagrouche/KitchenTeacher",
+    title: "Real Estate Market Analysis",
+    category: "AI/ML",
+    description: "Analysis of 2.2 million Realtor.com listings using Python and machine learning to uncover U.S. real estate market patterns, identifying market segments and predicting property prices.",
+    imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Seaborn"],
+    projectUrl: "https://github.com/slfagrouche/Real-Estate-Market-Analysis",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
-    duration: "2 months"
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "3 months"
   },
   {
     id: 7,
-    title: "Facial Emotion Recognition",
-    category: "AI/ML",
-    description: "A facial recognition system developed for the AI4ALL fellowship program that classifies 7 emotions with 92% accuracy across 35,000+ images.",
-    imageUrl: "https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "OpenCV", "TensorFlow", "Scikit-learn", "SVMs", "CNNs"],
-    projectUrl: "https://github.com/slfagrouche/AI4ALL-Ignite24-Group2-FacialRecognition",
+    title: "TUTOR - AI Educational Assistant",
+    category: ["AI/ML", "Web Development"],
+    description: "An AI-powered educational assistant for audio transcription, PDF text extraction, and context-aware Q&A using LangChain and RAG architecture.",
+    imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "LangChain", "Flask", "FAISS", "Google Cloud API"],
+    projectUrl: "https://github.com/slfagrouche/TUTOR",
     hasInteractiveDemo: true,
-    demoVideo: "https://www.youtube.com/watch?v=eN6KEEJMGwM&t=4s",
-    duration: "2 months"
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "3.5 months"
   },
   {
     id: 8,
+    title: "KitchenTeacher",
+    category: "Web Development",
+    description: "Interactive web application that predicts dishes from food images, provides YouTube recipe videos, and fetches detailed recipe instructions.",
+    imageUrl: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "Gradio", "Hugging Face", "TheMealDB API", "YouTube API"],
+    projectUrl: "https://github.com/slfagrouche/KitchenTeacher",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "2 months"
+  },
+  {
+    id: 9,
+    title: "Facial Emotion Recognition",
+    category: "AI/ML",
+    description: "A facial recognition system developed for the AI4ALL fellowship program that classifies 7 emotions with 92% accuracy across 35,000+ images.",
+    imageUrl: "https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "OpenCV", "TensorFlow", "Scikit-learn", "SVMs", "CNNs"],
+    projectUrl: "https://github.com/slfagrouche/AI4ALL-Ignite24-Group2-FacialRecognition",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "2 months"
+  },
+  {
+    id: 10,
     title: "The Swinging Snake Game",
     category: "Game Development",
     description: "A classic Snake game reimagined using Java Swing where players control a growing snake that eats apples to increase their score, with increasing difficulty levels.",
-    imageUrl: "https://images.unsplash.com/photo-1605711285791-0219e80e43a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1605711285791-0219e80e43a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Java", "Swing", "Object-Oriented Programming"],
     projectUrl: "https://github.com/slfagrouche/The-Swinging-Snake-Game",
-    hasInteractiveDemo: false,
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    demoEmbed: '<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.youtube.com/embed/eN6KEEJMGwM" title="The Swinging Snake Game Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>',
     duration: "2 weeks"
   }
 ];

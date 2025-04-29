@@ -9,9 +9,16 @@ const Projects = () => {
   
   const maxProjectsToShow = showAllProjects ? projects.length : 6;
   
+  // Updated filtering logic to handle projects with multiple categories
   const filteredProjects = activeFilter === "All" 
     ? projects.slice(0, maxProjectsToShow)
-    : projects.filter(project => project.category === activeFilter).slice(0, maxProjectsToShow);
+    : projects.filter(project => {
+        if (Array.isArray(project.category)) {
+          return project.category.includes(activeFilter);
+        } else {
+          return project.category === activeFilter;
+        }
+      }).slice(0, maxProjectsToShow);
 
   return (
     <section id="projects" className="py-20 fade-in">

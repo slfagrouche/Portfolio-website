@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Project } from "@/lib/constants";
+import { parse } from 'node-html-parser';
 
 interface ProjectCardProps {
   project: Project;
@@ -13,20 +14,49 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     e.preventDefault();
     setShowDemo(!showDemo);
   };
+
+  // Function to safely render HTML content
+  const createMarkup = (html: string) => {
+    return { __html: html };
+  };
+  
+  // Convert YouTube watch URLs to embed URLs
+  const getEmbedUrl = (url: string) => {
+    if (!url) return "";
+    
+    // If it's already an embed URL or Loom, return as is
+    if (url.includes('/embed/') || url.includes('loom.com')) {
+      return url;
+    }
+    
+    // Convert YouTube watch URLs to embed URLs
+    if (url.includes('youtube.com/watch')) {
+      const videoId = new URL(url).searchParams.get('v');
+      if (videoId) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+    }
+    
+    return url;
+  };
   
   return (
     <div className="beige-card beige-card-hover overflow-hidden bg-card">
       <div className="h-48 overflow-hidden relative group">
-        {showDemo && project.demoVideo ? (
+        {showDemo && (project.demoEmbed || project.demoVideo) ? (
           <div className="w-full h-full">
-            <iframe 
-              src={project.demoVideo} 
-              title={`${project.title} Demo`}
-              className="w-full h-full"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            {project.demoEmbed ? (
+              <div dangerouslySetInnerHTML={createMarkup(project.demoEmbed)} />
+            ) : (
+              <iframe 
+                src={getEmbedUrl(project.demoVideo)} 
+                title={`${project.title} Demo`}
+                className="w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            )}
           </div>
         ) : (
           <>
@@ -51,9 +81,22 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         )}
         
         <div className="absolute top-3 right-3 z-20">
-          <span className="text-xs bg-primary/20 dark:bg-primary/30 text-primary-foreground dark:text-primary px-3 py-1.5 rounded-full font-medium backdrop-blur-sm">
-            {project.category}
-          </span>
+          {Array.isArray(project.category) ? (
+            <div className="flex flex-col gap-1">
+              {project.category.map((cat, index) => (
+                <span 
+                  key={index} 
+                  className="text-xs bg-primary/20 dark:bg-primary/30 text-primary-foreground dark:text-primary px-3 py-1.5 rounded-full font-medium backdrop-blur-sm"
+                >
+                  {cat}
+                </span>
+              ))}
+            </div>
+          ) : (
+            <span className="text-xs bg-primary/20 dark:bg-primary/30 text-primary-foreground dark:text-primary px-3 py-1.5 rounded-full font-medium backdrop-blur-sm">
+              {project.category}
+            </span>
+          )}
         </div>
       </div>
       
