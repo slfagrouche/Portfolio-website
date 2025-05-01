@@ -63,15 +63,15 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "BetterChef",
-    category: ["AI/ML", "Web Development"],
-    description: "AI-powered cooking assistant providing personalized recipes, meal planning, and real-time cooking guidance.",
-    imageUrl: "https://images.unsplash.com/photo-1556911073-a517e752729c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
-    projectUrl: "https://github.com/slfagrouche/Betterchef-AI-Powered-Cooking-App",
+    title: "n8n-AI-Animal-VideoGen",
+    category: ["Automation", "AI/ML"],
+    description: "An end-to-end n8n automation that transforms simple animal and style inputs into professional short-form videos featuring animals in fashion styles using multiple AI services.",
+    imageUrl: "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["n8n", "DeepSeek", "Flux AI", "Runway Gen3", "ElevenLabs", "Creatomate", "Google APIs"],
+    projectUrl: "https://github.com/slfagrouche/n8n-AI-Animal-VideoGen",
     hasInteractiveDemo: true,
     demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
-    duration: "3 months"
+    duration: "1 week"
   },
   {
     id: 4,
@@ -157,8 +157,33 @@ export const projects: Project[] = [
     demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
     demoEmbed: '<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.youtube.com/embed/eN6KEEJMGwM" title="The Swinging Snake Game Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>',
     duration: "2 weeks"
+  },
+  {
+    id: 11,
+    title: "n8n-SmartAgent-Orchestrator",
+    category: ["Automation", "AI/ML"],
+    description: "A plug-and-play n8n workflow that integrates with Slack, using a LangChain Smart Agent powered by DeepSeek to auto-invoke tools like Tavily web search, Gmail draft creation, and Google Calendar events.",
+    imageUrl: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["n8n", "DeepSeek AI", "LangChain", "Tavily", "Google APIs", "Slack API"],
+    projectUrl: "https://github.com/slfagrouche/n8n-SmartAgent-Orchestrator",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "1 week"
+  },
+  {
+    id: 12,
+    title: "BetterChef",
+    category: ["AI/ML", "Web Development"],
+    description: "AI-powered cooking assistant providing personalized recipes, meal planning, and real-time cooking guidance.",
+    imageUrl: "https://images.unsplash.com/photo-1556911073-a517e752729c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
+    projectUrl: "https://github.com/slfagrouche/Betterchef-AI-Powered-Cooking-App",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "3 months"
   }
 ];
+
 
 export type Experience = {
   id: number;
@@ -321,7 +346,7 @@ export const skillTags: { [key: string]: SkillTag[] } = {
   ],
 };
 
-export const projectCategories = ["All", "AI/ML", "Web Development", "Cloud", "Game Development"];
+export const projectCategories = ["All", "AI/ML", "Web Development", "Cloud", "Game Development", "Automation"];
 
 export type BlogPost = {
   id: number;
