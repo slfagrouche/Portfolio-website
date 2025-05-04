@@ -357,58 +357,43 @@ export type BlogPost = {
   category: string;
   imageUrl: string;
   slug: string;
+  link?: string; // Added for external Medium links
 };
 
+// Blog posts defined with Medium links
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: "The Future of AI in Software Development",
-    excerpt: "How AI is transforming the way we build software and what developers need to know to stay ahead of the curve.",
-    date: "April 2, 2025",
-    readTime: "5 min read",
-    category: "AI",
-    imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&auto=format&fit=crop&q=80",
-    slug: "future-of-ai-in-software-development"
+    title: "Debug FastAPI in VS Code Like a Pro",
+    excerpt: "A comprehensive guide to setting up efficient debugging for FastAPI applications in Visual Studio Code.",
+    date: "May 2, 2025",
+    readTime: "3 min read",
+    category: "Web Development",
+    imageUrl: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=500&auto=format&fit=crop",
+    slug: "debug-fastapi-in-vs-code-like-a-pro",
+    link: "https://medium.com/@saidlfagrouche/debug-fastapi-in-vs-code-like-a-pro-db66c009be6c"
   },
   {
     id: 2,
-    title: "Building Scalable Applications with React and Node.js",
-    excerpt: "A comprehensive guide to architecting large-scale applications using React and Node.js while maintaining performance.",
-    date: "March 15, 2025",
-    readTime: "8 min read",
-    category: "Web Development",
-    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=80",
-    slug: "building-scalable-applications-react-nodejs"
+    title: "Vibe Coding: Understanding the Phenomenon, Its Advantages and Pitfalls",
+    excerpt: "Exploring the concept of vibe coding, its benefits for developer flow, and the potential drawbacks to be aware of.",
+    date: "April 15, 2025",
+    readTime: "5 min read",
+    category: "Software Development",
+    imageUrl: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*q4Se6ZYrnhteN1fk",
+    slug: "vibe-coding-understanding-the-phenomenon",
+    link: "https://medium.com/@saidlfagrouche/vibe-coding-understanding-the-phenomenon-its-advantages-and-pitfalls-a89c5892a8b8"
   },
   {
     id: 3,
-    title: "Optimizing Cloud Costs for Startups",
-    excerpt: "Practical strategies for managing and optimizing your cloud infrastructure costs while maintaining high performance.",
-    date: "February 23, 2025",
-    readTime: "6 min read",
-    category: "Cloud",
-    imageUrl: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=500&auto=format&fit=crop&q=80",
-    slug: "optimizing-cloud-costs-startups"
-  },
-  {
-    id: 4,
-    title: "Getting Started with LangChain for RAG Applications",
-    excerpt: "A developer's guide to implementing Retrieval Augmented Generation for production-level applications with LangChain.",
-    date: "January 18, 2025",
-    readTime: "7 min read",
+    title: "MCPs Demystified: The Bridge Between LLMs and the Tools That Make Them Useful",
+    excerpt: "Diving into Model Context Protocols and how they enable large language models to effectively communicate with external tools.",
+    date: "March 20, 2025",
+    readTime: "5 min read",
     category: "AI",
-    imageUrl: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=500&auto=format&fit=crop&q=80",
-    slug: "getting-started-with-langchain-rag"
-  },
-  {
-    id: 5,
-    title: "Best Practices for Secure API Design",
-    excerpt: "Essential security patterns and practices every developer should follow when designing and implementing APIs.",
-    date: "December 5, 2024",
-    readTime: "9 min read",
-    category: "Web Development",
-    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&auto=format&fit=crop&q=80",
-    slug: "best-practices-secure-api-design"
+    imageUrl: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*s4IZ3lKn7MSuGahL.png",
+    slug: "mcps-demystified",
+    link: "https://medium.com/@saidlfagrouche/mcps-demystified-the-bridge-between-llms-and-the-tools-that-make-them-useful-148c0a0a66a8"
   }
 ];
 

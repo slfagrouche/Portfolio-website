@@ -39,12 +39,14 @@ const BlogCard = ({ post }: BlogCardProps) => {
         </p>
         
         <a 
-          href={`/blog/${post.slug}`} 
+          href={post.link || `/blog/${post.slug}`}
+          target={post.link ? "_blank" : "_self"}
+          rel={post.link ? "noopener noreferrer" : ""}
           className="inline-flex items-center text-primary dark:text-primary font-medium text-sm group-hover:underline"
         >
-          Read More
+          {post.link ? "Read on Medium" : "Read More"}
           <FontAwesomeIcon 
-            icon={["fas", "arrow-right"]} 
+            icon={post.link ? ["fab", "medium"] : ["fas", "arrow-right"]} 
             className="ml-1.5 text-xs transition-transform duration-300 group-hover:translate-x-1" 
           />
         </a>
