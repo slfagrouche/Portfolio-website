@@ -28,6 +28,7 @@ export type Project = {
   imageUrl: string;
   technologies: string[];
   projectUrl: string;
+  backendUrl?: string;
   demoVideo?: string;
   demoEmbed?: string;
   hasInteractiveDemo?: boolean;
@@ -35,6 +36,18 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: 13,
+    title: "CampusMind AI Agent",
+    category: ["AI/ML", "Web Development"],
+    description: "AI-powered platform for CUNY/SUNY students that provides reliable information about professors, courses, and transfers using a multi-agent architecture with source attribution.",
+    imageUrl: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "FastAPI", "LangChain", "MongoDB", "FAISS", "Groq", "DuckDuckGo API"],
+    projectUrl: "https://github.com/slfagrouche/CampusMind-Frontend",
+    hasInteractiveDemo: true,
+    demoVideo: "https://www.youtube.com/embed/eN6KEEJMGwM",
+    duration: "4.5 months"
+  },
   {
     id: 1,
     title: "TheraGuide AI",
@@ -150,7 +163,7 @@ export const projects: Project[] = [
     title: "The Swinging Snake Game",
     category: "Game Development",
     description: "A classic Snake game reimagined using Java Swing where players control a growing snake that eats apples to increase their score, with increasing difficulty levels.",
-    imageUrl: "https://images.unsplash.com/photo-1605711285791-0219e80e43a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1614294149010-950b698f72c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1000&q=80",
     technologies: ["Java", "Swing", "Object-Oriented Programming"],
     projectUrl: "https://github.com/slfagrouche/The-Swinging-Snake-Game",
     hasInteractiveDemo: true,
