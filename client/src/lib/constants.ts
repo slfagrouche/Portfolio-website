@@ -377,6 +377,39 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
+    title: "JWTs: Your Compact, Secure ID Badge (Code Included)",
+    excerpt: "Getting lost in technical terms like 'JWT'? Let's clear it up. A comprehensive guide to understanding JSON Web Tokens with practical code examples.",
+    date: "May 15, 2025",
+    readTime: "4 min read",
+    category: "Web Security",
+    imageUrl: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=500&auto=format&fit=crop",
+    slug: "jwts-your-compact-secure-id-badge",
+    link: "https://medium.com/@saidlfagrouche/jwts-your-compact-secure-id-badge-code-included-791abf3d5743"
+  },
+  {
+    id: 2,
+    title: "PKCE: Adding a Secret Handshake to Your Login Flow",
+    excerpt: "Trying to understand how to make your app's login more secure? Let's talk about PKCE (pronounced 'pixy') and how it enhances OAuth 2 security.",
+    date: "May 14, 2025",
+    readTime: "4 min read",
+    category: "Web Security",
+    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=500&auto=format&fit=crop",
+    slug: "pkce-adding-secret-handshake-to-login-flow",
+    link: "https://medium.com/@saidlfagrouche/pkce-adding-a-secret-handshake-to-your-login-flow-c206ade9403b"
+  },
+  {
+    id: 3,
+    title: "OAuth 2: Explained Simply",
+    excerpt: "Ever felt confused by 'OAuth 2'? Let's break it down! Learn how OAuth 2 is like giving someone a permission slip instead of your house keys.",
+    date: "May 12, 2025",
+    readTime: "5 min read",
+    category: "Web Security",
+    imageUrl: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=500&auto=format&fit=crop",
+    slug: "oauth-2-explained-simply",
+    link: "https://medium.com/@saidlfagrouche/oauth-2-explained-simply-da3fb81d6687"
+  },
+  {
+    id: 4,
     title: "Debug FastAPI in VS Code Like a Pro",
     excerpt: "A comprehensive guide to setting up efficient debugging for FastAPI applications in Visual Studio Code.",
     date: "May 2, 2025",
@@ -387,7 +420,7 @@ export const blogPosts: BlogPost[] = [
     link: "https://medium.com/@saidlfagrouche/debug-fastapi-in-vs-code-like-a-pro-db66c009be6c"
   },
   {
-    id: 2,
+    id: 5,
     title: "Vibe Coding: Understanding the Phenomenon, Its Advantages and Pitfalls",
     excerpt: "Exploring the concept of vibe coding, its benefits for developer flow, and the potential drawbacks to be aware of.",
     date: "April 15, 2025",
@@ -398,7 +431,7 @@ export const blogPosts: BlogPost[] = [
     link: "https://medium.com/@saidlfagrouche/vibe-coding-understanding-the-phenomenon-its-advantages-and-pitfalls-a89c5892a8b8"
   },
   {
-    id: 3,
+    id: 6,
     title: "MCPs Demystified: The Bridge Between LLMs and the Tools That Make Them Useful",
     excerpt: "Diving into Model Context Protocols and how they enable large language models to effectively communicate with external tools.",
     date: "March 20, 2025",
