@@ -9,7 +9,7 @@ const Experience = () => {
       id: 7,
       company: "Brooklyn College",
       position: "Peer Mentor, Computer Science",
-      period: "Jan 2023 - Jun 2023",
+      period: "Jan 2023 - Dec 2024",
       responsibilities: [
         "Mentored 70+ first-year CS students, optimizing academic planning and campus integration",
         "Launched peer-led workshops and career sessions, increasing student retention by 30%"
