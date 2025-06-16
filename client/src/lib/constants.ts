@@ -210,6 +210,15 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     id: 1,
+    company: "Darknore",
+    position: "AI Test-Automation Engineer (Part-time)",
+    period: "Jun 2025 - Present",
+    responsibilities: [
+      "Build FastAPI-Supabase REST APIs and React dashboard, automating Playwright tests and reducing QA 70%",
+      "Integrate OpenAI self-healing locators, halving flaky Playwright failures and accelerating deployments 30%"],
+    isRight: true
+  },{
+    id: 2,
     company: "City Tech, CUNY",
     position: "Lead AI Engineer, Campus AI Community",
     period: "Dec 2024 - Present",
@@ -221,7 +230,7 @@ export const experiences: Experience[] = [
     isRight: false
   },
   {
-    id: 2,
+    id: 3,
     company: "AI4ALL",
     position: "Machine Learning Fellow",
     period: "Sep 2024 - Mar 2025",
@@ -233,10 +242,10 @@ export const experiences: Experience[] = [
     isRight: true
   },
   {
-    id: 3,
+    id: 4,
     company: "Computer Software Solutions LLC",
-    position: "Back-end Developer",
-    period: "Nov 2024 - Present",
+    position: "Backend Engineer Intern",
+    period: "Nov 2024 - Jun 2025",
     responsibilities: [
       "Engineered Java/Spring Boot microservices, implementing CI/CD pipelines with Docker and Kubernetes",
       "Architected an ML-powered resume parsing system using NLP, increasing matching accuracy by 35%",
@@ -245,7 +254,7 @@ export const experiences: Experience[] = [
     isRight: false
   },
   {
-    id: 4,
+    id: 5,
     company: "SafeGuard",
     position: "Founder",
     period: "Aug 2024 - Present",
@@ -257,10 +266,10 @@ export const experiences: Experience[] = [
     isRight: true
   },
   {
-    id: 5,
+    id: 6,
     company: "Salesforce",
     position: "Software Engineer Intern",
-    period: "Jun 2024 - Aug 2024",
+    period: "Jan 2024 - Aug 2024",
     responsibilities: [
       "Worked with the CRM Data Cloud Solutions Team",
       "Implemented solutions using Java and Springboot to build a CRM application",
@@ -268,7 +277,7 @@ export const experiences: Experience[] = [
     isRight: false
   },
   {
-    id: 6,
+    id: 7,
     company: "CUNY Tech Prep",
     position: "Data Science Fellow",
     period: "Aug 2023 - May 2024",

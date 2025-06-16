@@ -17,7 +17,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-primary/10 blur-2xl transform -translate-y-4 translate-x-4"></div>
               <img 
-                src="https://media.licdn.com/dms/image/v2/D4E03AQGNaBy-8LVZMw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725496285203?e=1749686400&v=beta&t=IB0cWMUnU1F5gWTVvyEaO8plfqMgXP947hSygvKRY2E" 
+                src="https://media.licdn.com/dms/image/v2/D4E03AQGNaBy-8LVZMw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725496285203?e=1755734400&v=beta&t=dI2mew6dL9NX0v3VZfdwDCAt1vWHtmlWkHhGxtQV72s" 
                 alt={personalInfo.name} 
                 className="relative w-64 h-64 object-cover rounded-full mx-auto border-4 border-background dark:border-secondary shadow-lg beige-card-hover"
               />
